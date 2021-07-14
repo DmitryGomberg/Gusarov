@@ -227,6 +227,22 @@ h6 {
    font-display: swap;
 }
 
+@font-face {
+   font-family: 'TTFirs-ExtraBold';
+   src: url('../fonts/TT Firs Extrabold [TheFontsMaster.com].eot');
+   src: local('☺'), url('../fonts/TT Firs Extrabold [TheFontsMaster.com].woff') format('woff'), url('../fonts/TT Firs Extrabold [TheFontsMaster.com].ttf') format('truetype'), url('../fonts/TT Firs Extrabold [TheFontsMaster.com].svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TTFirs-Bold';
+   src: url('../fonts/TT Firs Bold.eot');
+   src: local('☺'), url('../fonts/TT Firs Bold.woff') format('woff'), url('../fonts/TT Firs Bold.ttf') format('truetype'), url('../fonts/TT Firs Bold.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
 
 @font-face {
    font-family: 'Century Gothic';
@@ -272,9 +288,11 @@ h6 {
    color: #fff;
    transition: color .2s ease;
 }
+
 .header__left-title>a:hover {
    color: rgba(199, 182, 142, 0.822);
 }
+
 .header__left-decor {
    width: 70px;
    height: 2px;
@@ -301,9 +319,11 @@ h6 {
    color: #FFFFFF;
    transition: color .2s ease;
 }
+
 .head__menu-item>a:hover {
    color: #FFCF5C;
 }
+
 .header__right {
    display: flex;
    align-items: center;
@@ -334,6 +354,11 @@ h6 {
    cursor: pointer;
    color: #393333;
    margin: 0 30px;
+   transition: all .2s ease;
+}
+
+.header__right-button:hover {
+   background: #daae49;
 }
 
 .header__right-number {
@@ -348,4 +373,268 @@ h6 {
 
 .header__right-burger {
    cursor: pointer;
+}
+
+.dark {
+   color: #393333 !important;
+
+}
+
+.header__menu {
+   position: fixed;
+   width: 100%;
+   min-height: 100%;
+   top: 0;
+   overflow: auto;
+   display: block;
+   display: flex;
+   justify-content: space-between;
+   transition: all .2s ease;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.header__menu.active {
+   opacity: 1;
+   visibility: visible;
+}
+
+.header__menu-left {
+   flex: 0 1 37%;
+   background-color: #FFCF5C;
+   padding: 21px 50px 150px 50px;
+   display: flex;
+   flex-direction: column;
+}
+
+.header__menu-right {
+   flex: 0 1 63%;
+   background-color: #fff;
+   padding: 21px 50px 150px 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.header__tabs-links {
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+   margin-top: 100px;
+   margin-left: 100px;
+}
+
+.header__tabs-link {
+   font-family: TTFirs;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.03em;
+   color: #393333;
+   margin-bottom: 70px;
+   cursor: pointer;
+}
+
+.header__tabs-link>a {}
+
+.header__tabs-link:last-child {
+   margin-bottom: 0;
+}
+
+.menu__right-top {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.menu-search {
+   max-width: 400px;
+   width: 100%;
+   border-bottom: 2px solid #ccc;
+   display: flex;
+   align-items: center;
+}
+
+.menu-search>input {
+   flex: 0 1 100%;
+   margin-left: 20px;
+   outline: none;
+   border: none;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 25px;
+   color: #383333;
+}
+
+.search-icon {
+   cursor: pointer;
+}
+
+.menu-search>input::placeholder {
+   font-family: Century Gothic;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 20px;
+   color: #999999;
+}
+
+.menu__links {
+   display: flex;
+   align-items: center;
+
+   margin-right: 55px;
+}
+
+.menu__link {
+   background: #FFCF5C;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 15px;
+}
+
+.header__right-number {
+   white-space: nowrap;
+   transition: color .2s ease;
+}
+
+.header__right-number:hover {
+   color: #FFCF5C;
+}
+
+.menu-right-part {
+   display: flex;
+   align-items: center;
+}
+
+.menu-close {
+   cursor: pointer;
+}
+
+.menu-right-bottom {
+   position: relative;
+   flex: 0 1 100%;
+   width: 100%;
+}
+
+.menu-right-categories {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.menu-category-title {
+   font-family: TTFirs-ExtraBold;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.03em;
+   color: #393333;
+   margin-bottom: 50px;
+}
+
+.menu-category-link {
+   font-family: TTFirs-Bold;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.03em;
+
+   margin-bottom: 50px;
+}
+
+.menu-category-link>a {
+   color: #393333;
+}
+
+.menu-category-link>a:hover {
+   text-decoration: underline;
+}
+
+.menu-category-link:last-child {
+   margin-bottom: 0;
+}
+
+.menu-right-image {
+   position: absolute;
+   bottom: 0;
+   right: 80px;
+}
+
+.yellow {
+   color: #FFC24B;
+}
+
+.menu-sale {
+   max-width: 530px;
+   padding-bottom: 150px;
+}
+
+.menu-right-categories {}
+
+.menu__sale-title {
+   font-family: TTFirs;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.03em;
+   color: #393333;
+}
+
+.menu__sale-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 140%;
+   color: #393333;
+   margin-top: 20px;
+}
+
+.tab {
+   position: relative;
+}
+
+.tab::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   right: 0;
+   width: 100%;
+   height: 2px;
+   background-color: #393333;
+   visibility: hidden;
+   opacity: 0;
+   transition: all .2s ease;
+}
+
+.tab::before {
+   content: url('../img/arrow-right.svg');
+   position: absolute;
+   bottom: 5px;
+   right: -46px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all .2s ease;
+}
+
+.tab.active::after {
+   opacity: 1;
+   visibility: visible;
+}
+
+.tab.active::before {
+   opacity: 1;
+   visibility: visible;
+   right: -66px;
+}
+
+body.lock {
+   overflow: hidden;
 }
