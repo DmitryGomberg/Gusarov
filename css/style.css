@@ -485,6 +485,13 @@ h6 {
    margin-left: 100px;
 }
 
+.tabs {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+}
+
 .header__tabs-link {
    font-family: TTFirs;
    font-size: 36px;
@@ -785,6 +792,7 @@ body.lock {
    position: relative;
    color: #FFCF5C;
    margin-right: 100px;
+   cursor: pointer;
 }
 
 .s1__links-scroll>img {
@@ -2537,7 +2545,7 @@ body.lock {
 
 .footer__title {
    font-family: TTFirs-ExtraBold;
-   font-size: calc(18px  + (24 - 18) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1920 - 375)));
    line-height: 28px;
    letter-spacing: 0.03em;
    color: #FFCF5C;
@@ -2557,8 +2565,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
-   line-height: calc(17px  + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #FFFFFF;
    display: block;
    margin-bottom: 6px;
@@ -2604,13 +2612,15 @@ body.lock {
       align-items: flex-start;
       flex-direction: column;
    }
-.footer__social{
-   margin: 0 auto;
-}
-.footer__img{
-   margin: 0 auto;
-   margin-top: 30px;
-text-align: center;
-display: block;
-}
+
+   .footer__social {
+      margin: 0 auto;
+   }
+
+   .footer__img {
+      margin: 0 auto;
+      margin-top: 30px;
+      text-align: center;
+      display: block;
+   }
 }

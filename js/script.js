@@ -1,9 +1,10 @@
 $(document).ready(function () {
-   $(".tab_item").not(":first").hide();
+   $(".tab_item").not(":last").hide();
+   $(".tab").removeClass("active");
    $(".tab").click(function () {
       $(".tab").removeClass("active").eq($(this).index()).addClass("active");
       $(".tab_item").hide().eq($(this).index()).fadeIn();
-   }).eq(0).addClass("active");
+   });
 
    $(".tab2_item").not(":first").hide();
    $(".tab2").click(function () {
@@ -89,7 +90,7 @@ $(document).ready(function () {
    });
 
    const swiperCou = new Swiper('.swiper-container-cou', {
-      
+
       navigation: {
          nextEl: '.swiper-button-next-cou',
       },
@@ -131,5 +132,13 @@ $(document).ready(function () {
          type: "fraction",
       },
       spaceBetween: 20,
+   });
+
+   var win = $(window).height() - 80;
+   $('.s1__links-scroll').click(function () {
+      $('body,html').animate({
+         scrollTop: win
+      }, 800);
+      return false;
    });
 });
