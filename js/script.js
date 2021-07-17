@@ -1,4 +1,17 @@
 $(document).ready(function () {
+   console.log('fedfd');
+   let header = $('.header');
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 10) {
+         header.addClass('header_fixed');
+
+      } else {
+         header.removeClass('header_fixed');
+      }
+   });
+   $('body,html').animate({
+      scrollTop: 0
+   }, 0);
    $(".tab_item").not(":last").hide();
    $(".tab").removeClass("active");
    $(".tab").click(function () {
@@ -20,7 +33,7 @@ $(document).ready(function () {
       $(".tab3_item").hide().eq($(this).index()).fadeIn();
    });
    if ($(document).width() > '991') {
-      Scrollbar.initAll();
+      // Scrollbar.initAll();
       $(".team-img").hover(function () {
             $(".member-team-info").removeClass('active');
             $(".team-img").parent().removeClass('active');
@@ -50,15 +63,9 @@ $(document).ready(function () {
       });
    }
 
-   let header = $('.header');
 
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 10) {
-         header.addClass('header_fixed');
-      } else {
-         header.removeClass('header_fixed');
-      }
-   });
+
+
 
    const swiper = new Swiper('.swiper-container-part', {
       // Optional parameters
@@ -151,5 +158,5 @@ $(document).ready(function () {
       return false;
    });
 
-   
+
 });
