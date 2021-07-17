@@ -490,6 +490,7 @@ h6 {
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-end;
+   f
 }
 
 .header__tabs-link {
@@ -1672,7 +1673,7 @@ body.lock {
    background-position: center;
    background-repeat: no-repeat;
    padding-top: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
-   padding-bottom: calc(50px + (150 - 50) * ((100vw - 375px) / (1920 - 375)));
+   padding-bottom: calc(114px + (150 - 114) * ((100vw - 375px) / (1920 - 375)));
    overflow: hidden;
 }
 
@@ -1727,10 +1728,16 @@ body.lock {
    box-sizing: border-box;
    backdrop-filter: blur(20px);
    border-radius: 10px;
-   padding: 85px 40px;
+   padding: calc(20px + (85 - 20) * ((100vw - 375px) / (1920 - 375))) calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
    max-width: 660px;
    position: relative;
    overflow: hidden;
+}
+
+@media(max-width: 991px) {
+   .swiper-slide-cou {
+      min-height: 470px;
+   }
 }
 
 @media(min-width: 1900px) {
@@ -1750,21 +1757,21 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: 18px;
+   font-size: calc(16px + (18 - 16) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #FFFFFF;
-   margin-bottom: 10px;
+   margin-bottom: calc(5px  + (10 - 5) * ((100vw - 375px) / (1920 - 375)));
    position: relative;
    z-index: 2;
 }
 
 .s10__content {
    font-family: TTFirs-ExtraBold;
-   font-size: 30px;
+   font-size: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    letter-spacing: 0.03em;
    color: #FFFFFF;
-   margin-bottom: 50px;
+   margin-bottom: calc(20px  + (50 - 20) * ((100vw - 375px) / (1920 - 375)));
    position: relative;
    z-index: 2;
 }
@@ -1796,7 +1803,10 @@ body.lock {
    bottom: 0;
 }
 
-.swiper-slide-active .s10__name,
+.s10__photo>img {
+   max-width: 100%;
+}
+
 .swiper-slide-active .s10__content {
    color: #FFC24B;
 }
@@ -1991,6 +2001,16 @@ body.lock {
 
    .s6__card {
       padding-top: 71px;
+   }
+
+   .s10__photo {
+      max-width: 240px;
+   }
+
+   .s10__decor {
+      width: 140px;
+      height: 176px;
+      bottom: 40px;
    }
 }
 
@@ -2622,5 +2642,11 @@ body.lock {
       margin-top: 30px;
       text-align: center;
       display: block;
+   }
+}
+
+@media(max-width: 600px) {
+   .s10__main {
+      min-width: 100%;
    }
 }
