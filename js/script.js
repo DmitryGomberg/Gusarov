@@ -20,6 +20,7 @@ $(document).ready(function () {
       $(".tab3_item").hide().eq($(this).index()).fadeIn();
    });
    if ($(document).width() > '991') {
+      Scrollbar.initAll();
       $(".team-img").hover(function () {
             $(".member-team-info").removeClass('active');
             $(".team-img").parent().removeClass('active');
@@ -149,4 +150,6 @@ $(document).ready(function () {
       }, 800);
       return false;
    });
+
+   
 });

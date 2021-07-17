@@ -3,9 +3,31 @@ html {
    -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+   background: #FFC24B;
+   /* Safari */
+}
+
+::-moz-selection {
+   background: #FFC24B;
+   /* Firefox */
+}
+
+.title::selection {
+   background: #ffc55154;
+   /* Safari */
+}
+
+.title::-moz-selection {
+   background: #ffc55154;
+   /* Firefox */
+}
+
 body {
    margin: 0;
    padding: 0;
+   width: 100%;
+   height: 100vh;
 }
 
 html,
@@ -540,8 +562,8 @@ h6 {
    cursor: pointer;
 }
 
-.menu-search>input::placeholder,
-.s12__form>input::placeholder {
+.menu-search input::placeholder,
+.s12__form input::placeholder {
    font-family: Century Gothic;
    font-style: italic;
    font-weight: normal;
@@ -1624,6 +1646,7 @@ body.lock {
    color: #393333;
    margin-right: 10px;
    margin-bottom: 10px;
+   height: 50px;
 }
 
 .s9__form {
@@ -1652,9 +1675,14 @@ body.lock {
    font-weight: bold;
    font-size: 16px;
    line-height: 20px;
-   color: #FFFFFF;
+   max-height: 50px;
    cursor: pointer;
    transition: all .2s ease;
+   color: #fff;
+}
+
+.s9__button>a {
+   color: #FFFFFF;
 }
 
 .s9__button:hover {
@@ -2489,9 +2517,13 @@ body.lock {
    height: 50px;
 }
 
+.s12__form>a {
+   width: 100%;
+}
+
 .s12__button {
    width: 100%;
-
+   cursor: pointer;
    padding: 15px 75px;
    background: #393333;
    font-family: Century Gothic;
@@ -2678,5 +2710,93 @@ body.lock {
       z-index: 20;
       cursor: pointer;
       transition: all .2s ease;
+   }
+}
+
+.s9__form>a {
+   max-height: 50px;
+}
+
+.modal {
+   max-width: 914px;
+   width: 100%;
+   padding: 100px 60px;
+   text-align: center;
+   background: #F7F5F5;
+   border: 2px solid #FFCF5C;
+   display: none !important;
+}
+
+.modal.fancybox__content {
+   display: flex !important;
+}
+
+@media(min-width: 991px) {
+   .scrollbar-thumb {
+      background-color: #FFC24B !important;
+   }
+
+   .scrollbar-track-y {
+      background-color: #ffc34b5b !important;
+   }
+
+   .scrollbar-track {
+      display: block !important;
+   }
+}
+
+
+.modal1__title {}
+
+.fancybox__content>.carousel__button.is-close {
+   top: 30px;
+   right: 30px;
+   color: #FFC24B;
+   width: 25px;
+   height: 25px;
+}
+
+.title-modal {
+   font-family: TTFirs;
+   font-size: 40px;
+   line-height: 47px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #FFC24B;
+   margin-bottom: 10px;
+}
+
+.modal1__text {}
+
+.text-modal {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 140%;
+   color: #393333;
+   margin-bottom: 30px;
+}
+
+.modal-form {
+   padding-top: 100px;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.modal__form {
+   max-width: 400px;
+   width: 100%;
+}
+
+.swiper-pagination-cou {
+   display: none;
+}
+
+@media(max-width: 991px) {
+   .swiper-pagination-cou {
+      display: block;
    }
 }
