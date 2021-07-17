@@ -2537,7 +2537,7 @@ body.lock {
 
 .footer__title {
    font-family: TTFirs-ExtraBold;
-   font-size: 24px;
+   font-size: calc(18px  + (24 - 18) * ((100vw - 375px) / (1920 - 375)));
    line-height: 28px;
    letter-spacing: 0.03em;
    color: #FFCF5C;
@@ -2557,8 +2557,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
-   line-height: 25px;
+   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px  + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #FFFFFF;
    display: block;
    margin-bottom: 6px;
@@ -2566,6 +2566,7 @@ body.lock {
 
 .footer__right {
    flex: 0 1 330px;
+   width: 100%;
 }
 
 @media(max-width: 1260px) {
@@ -2600,7 +2601,7 @@ body.lock {
    }
 
    .footer__container {
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
    }
 .footer__social{
