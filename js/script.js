@@ -107,6 +107,14 @@ $(document).ready(function () {
             slidesPerView: "auto",
          }
       },
+      navigation: {
+         nextEl: '.swiper-button-next-cou',
+      },
+      autoHeight: true,
+      pagination: {
+         el: ".swiper-pagination-cou",
+         type: "fraction",
+      },
    });
 
    const swiperOff = new Swiper('.swiper-container-off', {
