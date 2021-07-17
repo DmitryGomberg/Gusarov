@@ -1961,6 +1961,12 @@ body.lock {
       min-height: 375px;
       background-image: url(../img/s1__bg-mobile.jpg);
    }
+.modal {
+   min-height: 100vh;
+}
+   .fancybox__slide {
+      padding: 0px !important;
+   }
 
    .s12__text {
       max-width: 250px;
@@ -1990,9 +1996,12 @@ body.lock {
    }
 
    .s9__form>input,
-   .s9__button {
+   .s9__form>a {
       width: 100%;
       margin-right: 0;
+   }
+   .s9__button{
+      width: 100%;
    }
 
    .s1__quiz-start {
@@ -2719,8 +2728,9 @@ body.lock {
 
 .modal {
    max-width: 914px;
+
    width: 100%;
-   padding: 100px 60px;
+   padding: calc(50px  + (100 - 50) * ((100vw - 375px) / (1920 - 375))) calc(20px  + (60 - 20) * ((100vw - 375px) / (1920 - 375)));
    text-align: center;
    background: #F7F5F5;
    border: 2px solid #FFCF5C;
@@ -2743,6 +2753,8 @@ body.lock {
    .scrollbar-track {
       display: block !important;
    }
+
+
 }
 
 
