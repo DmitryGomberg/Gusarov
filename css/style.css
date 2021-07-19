@@ -2746,7 +2746,6 @@ body.lock {
       position: absolute;
       left: 50%;
       bottom: -69px;
-
       z-index: 20;
       cursor: pointer;
       transition: all .2s ease;
