@@ -2847,3 +2847,13 @@ body.lock {
    padding: 0;
    max-width: 1400px;
 }
+
+.video-form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #000;
+}
+.video-form>video{
+   max-width: 100%;
+}
