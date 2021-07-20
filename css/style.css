@@ -565,11 +565,12 @@ h6 {
 .menu-search input::placeholder,
 .s12__form input::placeholder {
    font-family: Century Gothic;
-   font-style: italic;
+   font-style: normal;
    font-weight: normal;
-   font-size: 20px;
+   font-size: 16px;
    line-height: 20px;
-   color: #999999;
+   color: #393333;
+   opacity: 0.7;
 }
 
 .menu__links {
@@ -3087,10 +3088,12 @@ body.lock {
    opacity: 0;
    visibility: hidden;
 }
+
 .city.show .city-click {
    visibility: visible;
    opacity: 1;
 }
+
 .city-click-wrap {
    display: flex;
    justify-content: center;
@@ -3123,14 +3126,17 @@ body.lock {
    letter-spacing: 0.02em;
    color: #FFC24B;
 }
-@media(max-width: 1150px){
-   .city-click{
+
+@media(max-width: 1150px) {
+   .city-click {
       display: none;
    }
-   .city-hover-info{
+
+   .city-hover-info {
       display: none;
    }
 }
+
 .city-click-subtitle {
    font-family: TTFirs-Bold;
    font-size: 30px;
