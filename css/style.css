@@ -2846,6 +2846,7 @@ body.lock {
 .video-form{
    padding: 0;
    max-width: 1400px;
+   height: 100%;
 }
 
 .video-form{
@@ -2854,6 +2855,7 @@ body.lock {
    justify-content: center;
    background-color: #000;
 }
-.video-form>video{
+.video-form>iframe{
    max-width: 100%;
+   width: 100%;
 }
