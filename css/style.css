@@ -2847,6 +2847,7 @@ body.lock {
    padding: 0;
    max-width: 1400px;
    height: 100%;
+   overflow: hidden;
 }
 
 .video-form{
