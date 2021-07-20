@@ -158,5 +158,11 @@ $(document).ready(function () {
       return false;
    });
 
-
+   $('.city').hover(function (event) {
+      $(this).toggleClass('active');
+   });
+   $('.city').click(function (event) {
+      $(this).toggleClass('show');
+      $('body').toggleClass('lock');
+   });
 });
