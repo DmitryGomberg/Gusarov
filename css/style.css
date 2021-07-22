@@ -3744,7 +3744,7 @@ body.lock {
 }
 
 .s-s1-bonus-arrow {
-   margin: 50px 0px;
+   margin: calc(30px  + (50 - 30) * ((100vw - 375px) / (1920 - 375))) 0px;
    position: relative;
    animation: dragServices 1s ease-in-out infinite;
    animation-direction: alternate;
