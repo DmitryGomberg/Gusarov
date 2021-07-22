@@ -257,7 +257,6 @@ h6 {
 [class*=" _icon-"]::before {
    /* use !important to prevent issues with browser extensions that change fonts */
    font-family: 'icons' !important;
-   speak: never;
    font-style: normal;
    font-weight: normal;
    font-variant: normal;
@@ -512,7 +511,6 @@ h6 {
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-end;
-   f
 }
 
 .header__tabs-link {
@@ -525,7 +523,6 @@ h6 {
    cursor: pointer;
 }
 
-.header__tabs-link>a {}
 
 .header__tabs-link:last-child {
    margin-bottom: 0;
@@ -684,8 +681,6 @@ h6 {
    max-width: 530px;
    padding-bottom: 150px;
 }
-
-.menu-right-categories {}
 
 .menu__sale-title {
    font-family: TTFirs;
@@ -931,9 +926,6 @@ body.lock {
    }
 }
 
-.section2 {}
-
-.container {}
 
 .s2__container {
    padding-top: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
@@ -957,8 +949,6 @@ body.lock {
    max-width: 910px;
    margin-right: 20px;
 }
-
-.s2__content-title {}
 
 .title {
    font-family: TTFirs;
@@ -1061,8 +1051,6 @@ body.lock {
       align-items: center;
    }
 }
-
-.map-img-wrap>img {}
 
 .tab2_item {
    max-height: calc(600px + (834 - 600) * ((100vw - 375px) / (1920 - 375)));
@@ -1368,10 +1356,6 @@ body.lock {
 }
 
 @media(min-width: 1150px) {
-   .city-hover {}
-
-   .city-hover-info>p {}
-
    .city-hover-info {
       padding: 10px;
       background: #393333;
@@ -1437,7 +1421,6 @@ body.lock {
    text-align: center;
 }
 
-.title {}
 
 .s4__wrap {
    display: flex;
@@ -1498,7 +1481,6 @@ body.lock {
    margin-left: 100px;
 }
 
-.tab3_item {}
 
 .s4__tap {
    position: absolute;
@@ -1528,10 +1510,6 @@ body.lock {
    color: #FFC24B;
 }
 
-.tab3__text {}
-
-.text {}
-
 .tab3__button {
    display: flex;
    flex-direction: row;
@@ -1545,7 +1523,6 @@ body.lock {
    font-weight: bold;
    font-size: 18px;
    line-height: 22px;
-   color:
 }
 
 .section5 {
@@ -1555,21 +1532,11 @@ body.lock {
    text-align: center;
 }
 
-.container {}
-
-.s5__container {}
-
-.s5__title {}
-
-.title {}
-
 .s5__text {
    max-width: 850px;
    margin-right: auto;
    margin-left: auto;
 }
-
-.text {}
 
 .s5__all {
    font-family: Century Gothic;
@@ -1648,8 +1615,6 @@ body.lock {
    top: -29px;
    left: 217px;
 }
-
-.member-team {}
 
 .member-team-photo {
    display: inline-block;
@@ -1807,8 +1772,6 @@ body.lock {
    right: 0px;
 }
 
-.s7__main-content {}
-
 .s7__container {
    display: flex;
    flex-direction: column;
@@ -1842,10 +1805,6 @@ body.lock {
 .s7__main-title:hover {
    text-decoration: underline;
 }
-
-.s7__main-text {}
-
-.text {}
 
 .s7__main-more a {
    font-family: Century Gothic;
@@ -2090,36 +2049,10 @@ body.lock {
    min-width: 565px;
 }
 
-.s10__title {}
-
-.title {}
-
-.s10__text {}
-
-.text {}
-
-.light {}
-
 .s10__slider {
    width: 100%;
    padding-left: 90px;
 }
-
-.swiper-container {}
-
-.swiper-container-cou {}
-
-.swiper-wrapper {}
-
-.swiper-wrapper-cou {}
-
-.swiper-slide {}
-
-.swiper-slide-cou {}
-
-.swiper-button-next {}
-
-
 
 .swiper-slide-cou {
    background: rgba(255, 255, 255, 0.2);
@@ -2239,8 +2172,6 @@ body.lock {
    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
 }
 
-.container {}
-
 .s11__container {
    text-align: center;
 }
@@ -2309,12 +2240,6 @@ body.lock {
    justify-content: space-between;
    align-items: center;
 }
-
-.header__left-title {}
-
-.main-title {}
-
-.header__mob-close {}
 
 .mob-inner {
    padding: 100px 50px 40px 50px;
@@ -2879,7 +2804,8 @@ body.lock {
 .s12__subtitle {
    font-family: TTFirs-ExtraBold;
    font-size: calc(16px + (30 - 16) * ((100vw - 375px) / (1920 - 375)));
-   line-height: calc(19px + (35 - 19) * ((100vw - 375px) / (1920 - 375))) letter-spacing: 0.03em;
+   line-height: calc(19px + (35 - 19) * ((100vw - 375px) / (1920 - 375)));
+   letter-spacing: 0.03em;
    color: #FFC24B;
 }
 
@@ -3006,8 +2932,6 @@ body.lock {
 .footer__link>a:hover {
    color: #FFC24B;
 }
-
-.footer__img {}
 
 .footer__center {
    flex: 0 1 330px;
@@ -3147,9 +3071,6 @@ body.lock {
 
 }
 
-
-.modal1__title {}
-
 .fancybox__content>.carousel__button.is-close {
    top: 30px;
    right: 30px;
@@ -3167,8 +3088,6 @@ body.lock {
    color: #FFC24B;
    margin-bottom: 10px;
 }
-
-.modal1__text {}
 
 .text-modal {
    font-family: Century Gothic;
