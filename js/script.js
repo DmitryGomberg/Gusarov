@@ -157,7 +157,12 @@ $(document).ready(function () {
       }, 800);
       return false;
    });
-
+   $('.s-s1-bonus-arrow').click(function () {
+      $('body,html').animate({
+         scrollTop: $(window).height()
+      }, 800);
+      return false;
+   });
    $('.city').hover(function (event) {
       $(this).toggleClass('active');
    });
