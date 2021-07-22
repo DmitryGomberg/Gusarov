@@ -162,7 +162,10 @@ $(document).ready(function () {
       $(this).toggleClass('active');
    });
    $('.city').click(function (event) {
-      $(this).toggleClass('show');
-      $('body').toggleClass('lock');
+      if ($(document).width() > '1150') {
+         $(this).toggleClass('show');
+         $('body').toggleClass('lock');
+         event.preventDefault();
+      }
    });
 });

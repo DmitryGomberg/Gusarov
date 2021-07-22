@@ -1057,7 +1057,7 @@ body.lock {
 @media(max-width: 1150px) {
    .map-img-wrap {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
    }
 }
@@ -1078,151 +1078,296 @@ body.lock {
    margin-top: 50px;
 }
 
-@media(min-width: 1150px) {
 
 
+.city1 {
+   top: 378px;
+   left: 757px;
+}
+
+.city2 {
+   top: 202px;
+   left: 1031px;
+}
+
+.city3 {
+   top: 52px;
+   left: 1260px;
+}
+
+.city4 {
+   top: 81px;
+   left: 1348px;
+}
+
+.city5 {
+   top: 196px;
+   left: 1450px;
+}
+
+.city6 {
+   top: 487px;
+   left: 1421px;
+}
+
+.city7 {
+   top: 330px;
+   left: 1281px;
+}
+
+.city8 {
+   top: 334px;
+   left: 1222px;
+}
+
+.city9 {
+   top: 426px;
+   left: 1249px;
+}
+
+.city10 {
+   top: 487px;
+   left: 1421px;
+}
+
+.city11 {
+   top: 372px;
+   left: 1123px;
+}
+
+.city12 {
+   top: 411px;
+   left: 1143px;
+}
+
+.city13 {
+   top: 449px;
+   left: 1073px;
+}
+
+.city14 {
+   top: 526px;
+   left: 1102px;
+}
+
+.city15 {
+   top: 515px;
+   left: 1022px;
+}
+
+.city16 {
+   top: 427px;
+   left: 960px;
+}
+
+.city17 {
+   top: 596px;
+   left: 795px;
+}
+
+.city18 {
+   top: 677px;
+   left: 1065px;
+}
+
+.city19 {
+   top: 736px;
+   left: 670px;
+}
+
+.city-1 {
+   top: 160px;
+   left: 840px;
+}
+
+.city-2 {
+   top: 196px;
+   left: 1157px;
+}
+
+.city-3 {
+   top: 286px;
+   left: 1212px;
+}
+
+.city-4 {
+   top: 337px;
+   left: 1201px;
+}
+
+.city-5 {
+   top: 370px;
+   left: 1353px;
+}
+
+.city-6 {
+   top: 494px;
+   left: 1268px;
+}
+
+.city-7 {
+   top: 431px;
+   left: 846px;
+}
+
+.city-8 {
+   top: 387px;
+   left: 824px;
+}
+
+.city {
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+}
+
+.city>a {
+   width: 22px;
+   height: 22px;
+   display: inline-block;
+   position: relative;
+   z-index: 3;
+}
+
+@media(max-width: 800px) {
    .city1 {
       top: 378px;
-      left: 757px;
+      left: 232px;
    }
 
    .city2 {
       top: 202px;
-      left: 1031px;
+      left: 506px;
    }
 
    .city3 {
       top: 52px;
-      left: 1260px;
+      left: 735px;
    }
 
    .city4 {
       top: 81px;
-      left: 1348px;
+      left: 823px;
    }
 
    .city5 {
       top: 196px;
-      left: 1450px;
+      left: 925px;
    }
 
    .city6 {
       top: 487px;
-      left: 1421px;
+      left: 896px;
    }
 
    .city7 {
       top: 330px;
-      left: 1281px;
+      left: 756px;
    }
 
    .city8 {
       top: 334px;
-      left: 1222px;
+      left: 697px;
    }
 
    .city9 {
       top: 426px;
-      left: 1249px;
+      left: 724px;
    }
 
    .city10 {
       top: 487px;
-      left: 1421px;
+      left: 896px;
    }
 
    .city11 {
       top: 372px;
-      left: 1123px;
+      left: 598px;
    }
 
    .city12 {
       top: 411px;
-      left: 1143px;
+      left: 618px;
    }
 
    .city13 {
       top: 449px;
-      left: 1073px;
+      left: 548px;
    }
 
    .city14 {
       top: 526px;
-      left: 1102px;
+      left: 577px;
    }
 
    .city15 {
       top: 515px;
-      left: 1022px;
+      left: 497px;
    }
 
    .city16 {
       top: 427px;
-      left: 960px;
+      left: 435px;
    }
 
    .city17 {
       top: 596px;
-      left: 795px;
+      left: 270px;
    }
 
    .city18 {
       top: 677px;
-      left: 1065px;
+      left: 540px;
    }
 
    .city19 {
       top: 736px;
-      left: 670px;
+      left: 145px;
    }
 
    .city-1 {
       top: 160px;
-      left: 840px;
+      left: 160px;
    }
 
    .city-2 {
       top: 196px;
-      left: 1157px;
+      left: 477px;
    }
 
    .city-3 {
       top: 286px;
-      left: 1212px;
+      left: 532px;
    }
 
    .city-4 {
       top: 337px;
-      left: 1201px;
+      left: 521px;
    }
 
    .city-5 {
       top: 370px;
-      left: 1353px;
+      left: 673px;
    }
 
    .city-6 {
       top: 494px;
-      left: 1268px;
+      left: 588px;
    }
 
    .city-7 {
       top: 431px;
-      left: 846px;
+      left: 166px;
    }
 
    .city-8 {
       top: 387px;
-      left: 824px;
+      left: 144px;
    }
+}
 
-   .city {
-      position: absolute;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-   }
-
+@media(min-width: 1150px) {
    .city-hover {}
 
    .city-hover-info>p {}
@@ -1430,7 +1575,7 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: 24px;
+   font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
    line-height: 29px;
    color: #393333;
    position: relative;
@@ -1674,7 +1819,7 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 18px;
+   font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (1920 - 375)));
    line-height: 22px;
    color: #393333;
    margin-bottom: calc(5px + (20 - 5) * ((100vw - 375px) / (1920 - 375)));
@@ -1745,8 +1890,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: 24px;
-   line-height: 29px;
+   font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(19px + (29 - 19) * ((100vw - 375px) / (1920 - 375)));
    margin-bottom: 10px;
    color: #393333;
 }
@@ -1759,8 +1904,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 18px;
-   line-height: 22px;
+   font-size: calc(14px + (17 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (22 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
    max-height: 66px;
    display: -webkit-box;
@@ -1845,8 +1990,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: 24px;
-   line-height: 29px;
+   font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(19px + (29 - 19) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
    margin-bottom: 10px;
 }
@@ -1855,8 +2000,8 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
-   line-height: 25px;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
    margin-bottom: 30px;
 }
@@ -3135,6 +3280,10 @@ body.lock {
    .city-hover-info {
       display: none;
    }
+
+   .map-img-wrap {
+      overflow: scroll;
+   }
 }
 
 .city-click-subtitle {
@@ -3178,6 +3327,7 @@ body.lock {
    bottom: 0;
    left: -200px;
    z-index: -1;
+   max-height: 100vh;
 }
 
 .city-close {
@@ -3310,28 +3460,29 @@ body.lock {
 
 .inter__but {
    display: flex;
-   margin-top: calc(20px  + (10 - 20) * ((100vw - 375px) / (1920 - 375)));
+   margin-top: calc(20px + (10 - 20) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .inter-back {
-   margin-right: calc(20px  + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+   margin-right: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
    padding: 14px calc(28px + (72 - 28) * ((100vw - 375px) / (1920 - 375)));
    background: #393333;
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 22px;
    color: #FFFFFF;
    cursor: pointer;
-} 
+}
+
 .inter__next {
    padding: 14px calc(32px + (72 - 32) * ((100vw - 375px) / (1920 - 375)));
    background: #393333;
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 22px;
    color: #FFFFFF;
    cursor: pointer;
