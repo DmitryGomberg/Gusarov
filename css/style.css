@@ -1125,9 +1125,14 @@ body.lock {
 }
 
 @media(max-width: 1490px) {
+   .header__left-decor {
+      display: none;
+   }
    .header-services .header__left-decor {
       display: block;
    }
+
+   
 
    .header__left-decor {
       width: 100px;
@@ -5066,7 +5071,88 @@ body.lock {
       transform: translate(-100px, -74px);
       max-height: 125px;
    }
-   .s-s11-form{
+
+   .s-s11-form {
       padding: 0 20px;
+   }
+}
+
+.s-section12 {
+   width: 100%;
+   background: #F7F5F5;
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+
+}
+
+.container {}
+
+.s-s12-container {}
+
+.s-s12-title {}
+
+.s-title {}
+
+.yellow {}
+
+.s-s12-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   max-width: 760px;
+   margin-top: calc(0px + (10 - 0) * ((100vw - 375px) / (1920 - 375)));
+   margin-bottom: calc(10px + (30 - 10) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s12-cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s12-card {
+   padding: 30px;
+   background-color: #fff;
+   display: flex;
+   align-items: flex-start;
+}
+
+.s-s12-img {
+   margin-right: 20px;
+   max-width: calc(20px + (50 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s12-img>img {
+   width: 100%;
+}
+
+.s-s12-card-cont {
+   flex: 0 1 100%;
+}
+
+.s-s12-card-title {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (24 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s12-card-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   margin-top: calc(5px + (10 - 5) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+}
+
+@media(max-width: 767px) {
+   .s-s12-cards {
+      grid-template-columns: 1fr;
    }
 }
