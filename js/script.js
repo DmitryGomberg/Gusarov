@@ -32,6 +32,15 @@ $(document).ready(function () {
       $(".s4__tap").hide();
       $(".tab3_item").hide().eq($(this).index()).fadeIn();
    });
+   if ($(document).width() < '1150') {
+      $(".tab4_item").not(":first").hide();
+      $(".tab4").click(function () {
+         $(".tab4").removeClass("active").eq($(this).index()).addClass("active");
+         $(".tab4_item").hide().eq($(this).index()).fadeIn();
+      }).eq(0).addClass("active");
+   }
+
+
    if ($(document).width() > '991') {
       // Scrollbar.initAll();
       $(".team-img").hover(function () {
@@ -172,5 +181,11 @@ $(document).ready(function () {
          $('body').toggleClass('lock');
          event.preventDefault();
       }
+   });
+   $('.panel-heading').removeClass('in').next().slideUp();
+   $('.panel-heading').click(function () {
+      $(this).toggleClass('in').next().slideToggle();
+      $('.panel-heading').not(this).removeClass('in').next().slideUp();
+      event.preventDefault();
    });
 });
