@@ -490,6 +490,24 @@ h6 {
    max-height: 100px;
 }
 
+.s-s6__card-rating-new {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(18px + (30 - 18) * ((100vw - 375px) / (1920 - 375))) !important;
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s6__card-name-new {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
 @media(min-width: 1240px) {
    .header-services {
       max-height: 150px;
@@ -509,6 +527,15 @@ h6 {
 @media(max-width: 600px) {
    .header-services {
       background: rgba(0, 0, 0, 0.3);
+   }
+
+   .s-s11-form>input {
+      border: 1px solid #CCCCCC !important;
+   }
+
+   .s-s11-text {
+      padding: 0 20px;
+      margin-top: 15px;
    }
 
    .panel-heading::after {
@@ -1124,11 +1151,12 @@ body.lock {
    .header__left-decor {
       display: none;
    }
+
    .header-services .header__left-decor {
       display: block;
    }
 
-   
+
 
    .header__left-decor {
       width: 100px;
@@ -1981,9 +2009,13 @@ body.lock {
    background-position: center;
    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
 }
-.s-section6-new{
-   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+
+.s-section6-new {
+   padding-top: calc(0px + (50 - 0) * ((100vw - 375px) / (1920 - 375)));
+   padding-bottom: 100px;
+   background: #F7F5F5;
 }
+
 .s6__inner {
    display: flex;
    justify-content: space-between;
@@ -5000,7 +5032,7 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    text-align: center;
    color: #393333;
@@ -5044,7 +5076,7 @@ body.lock {
 .s-s11-but {
    width: 100%;
    cursor: pointer;
-   padding: 15px 75px;
+   padding: 15px 65px;
    background: #393333;
    font-family: Century Gothic;
    font-style: normal;
@@ -5153,4 +5185,13 @@ body.lock {
    .s-s12-cards {
       grid-template-columns: 1fr;
    }
+}
+
+.s-s6__text-new {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
 }
