@@ -162,7 +162,16 @@ $(document).ready(function () {
       },
       spaceBetween: 20,
    });
+   const swiperS = new Swiper('.swiper-container-s', {
 
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-s',
+         prevEl: '.swiper-button-prev-s',
+      },
+      autoHeight: true,
+      spaceBetween: 40
+   });
    var win = $(window).height() - 80;
    $('.s1__links-scroll').click(function () {
       $('body,html').animate({
