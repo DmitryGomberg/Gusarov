@@ -524,11 +524,7 @@ h6 {
       text-align: left;
    }
 
-   .header__left-title>a {
-      color: #fff !important;
-   }
-
-   .menu-open::before {
+   .header-services .menu-open::before {
       color: #FFC24B !important;
    }
 
@@ -1985,7 +1981,9 @@ body.lock {
    background-position: center;
    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
 }
-
+.s-section6-new{
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+}
 .s6__inner {
    display: flex;
    justify-content: space-between;
