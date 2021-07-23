@@ -39,7 +39,11 @@ $(document).ready(function () {
          $(".tab4_item").hide().eq($(this).index()).fadeIn();
       }).eq(0).addClass("active");
    }
-
+   $(".tab5_item").not(":first").hide();
+   $(".tab5").click(function () {
+      $(".tab5").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tab5_item").hide().eq($(this).index()).fadeIn();
+   }).eq(0).addClass("active");
 
    if ($(document).width() > '991') {
       // Scrollbar.initAll();
