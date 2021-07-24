@@ -5615,6 +5615,14 @@ body.lock {
       display: block;
    }
 
+   .s-s14-form-no {
+      width: 100%;   
+      position: absolute;
+      top: 120%;
+      transform: translateY(0) translateX(50%);
+      right: 50%;
+   }
+
    .s-s14-next-step {
       display: none;
    }
