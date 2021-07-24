@@ -5670,8 +5670,8 @@ body.lock {
    }
 
    .s-s14-button {
-      padding: 14px 40px;
-   }
+  padding: 14px 22px;
+}
 
    .o .s-s14-button-next {
       display: flex;
