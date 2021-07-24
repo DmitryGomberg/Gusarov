@@ -503,7 +503,7 @@ h6 {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
 }
@@ -5194,4 +5194,56 @@ body.lock {
    font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
+}
+
+.s-s6__card-img-new {
+   text-align: right;
+}
+
+.s-section13 {
+   background: #FFCF5C;
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+}
+
+.s-s13-container {
+   display: flex;
+   align-items: center;
+}
+
+.container {}
+
+.s-s13-left {
+   flex: 0 1 50%;
+}
+
+.s-s13-right {
+   flex: 0 1 50%;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (22 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s13-right>p>a {
+   color: #fff;
+   text-decoration: underline;
+   font-weight: bolder;
+}
+
+@media(max-width: 600px) {
+   .s-s13-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .s-s13-left {
+      margin-bottom: 10px;
+      text-align: center;
+   }
+
+   .s-s13-right>p {
+      text-align: center;
+   }
 }
