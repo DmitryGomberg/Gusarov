@@ -45,6 +45,12 @@ $(document).ready(function () {
       $(".tab5_item").hide().eq($(this).index()).fadeIn();
    }).eq(0).addClass("active");
 
+   $(".tab6_item").not(":last").hide();
+   $(".tab6").click(function () {
+      $(".tab6").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tab6_item").hide().eq($(this).index()).fadeIn();
+   }).eq(0).addClass("active");
+
 
    var currentTab = 0;
    $('.s-s14-button-wrap').addClass('o');

@@ -5670,8 +5670,8 @@ body.lock {
    }
 
    .s-s14-button {
-  padding: 14px 22px;
-}
+      padding: 14px 22px;
+   }
 
    .o .s-s14-button-next {
       display: flex;
@@ -5793,8 +5793,189 @@ body.lock {
    }
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
    .s-s16-container::after {
-  display: none;
+      display: none;
+   }
 }
+
+.s-section15 {
+   width: 100%;
+   background-image: url(../img/Services/s15-bg.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+   min-height: 790px;
+}
+
+.s-s15-text {
+   max-width: 980px;
+   margin: 0 auto;
+   margin-top: 10px;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #FFFFFF;
+   margin-bottom: calc(22px + (40 - 22) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.tabs6 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   width: 100%;
+}
+
+.tab6 {
+   margin: 0 auto;
+}
+
+.container-radio {
+   color: #fff;
+}
+
+.checkmark-radio {}
+
+.tab6_content {}
+
+.tab6_item {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.s-s15-card {
+   margin: 0 50px;
+   background-color: #fff;
+   max-width: 624px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.s-s15-card-top {
+   display: flex;
+   position: relative;
+   align-items: center;
+   margin-bottom: 40px;
+}
+
+.s-s15-card-img {
+   max-width: calc(70px + (100 - 70) * ((100vw - 375px) / (1920 - 375)));
+   width: 100%;
+   height: calc(70px + (100 - 70) * ((100vw - 375px) / (1920 - 375)));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #FFD164;
+   margin-right: 20px;
+}
+
+.s-s15-card-img>img {
+   max-width: calc(35px + (60 - 35) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s15-card-title {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 120%;
+   color: #393333;
+   position: relative;
+   text-align: left;
+
+}
+
+.s-s15-card-help {
+   position: absolute;
+   bottom: -28px;
+   left: 0;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 120%;
+   text-decoration-line: underline;
+   color: #393333;
+   opacity: 0.7;
+}
+
+.s-s15-list {
+   text-align: left;
+   width: 100%;
+   padding: 0 calc(50px + (66 - 50) * ((100vw - 375px) / (1920 - 375)))
+}
+
+.s-s15-list-item {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.s-s15-list-item::before {
+   content: url(../img/Services/s15-list.png);
+   position: absolute;
+   left: -28px;
+   bottom: -1px;
+}
+
+.s-s15-price {
+   font-family: RadiateSans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(15px + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #393333;
+   margin-bottom: calc(10px + (30 - 10) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s15-price>span {
+   font-size: calc(24px + (30 - 24) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@media(max-width: 991px) {
+   .tabs6 {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .s-s15-card {
+      margin: 0 10px;
+   }
+}
+
+@media(max-width: 767px) {
+   .tab6_item {
+      display: block;
+   }
+
+   .s-s15-card {
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   .tabs6 {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .s-s15-list {
+      order: 1;
+      margin-bottom: 20px;
+   }
+
+   .s-section15 {
+      width: 100%;
+      background-image: url(../img/Services/s15-bg-mob.png);
+   }
 }
