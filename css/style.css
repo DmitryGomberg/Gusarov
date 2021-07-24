@@ -528,7 +528,10 @@ h6 {
    .header-services {
       background: rgba(0, 0, 0, 0.3);
    }
-
+.header-services .header__left-title>a {
+  color: #fff;
+  transition: color .2s ease;
+}
    .s-s11-form>input {
       border: 1px solid #CCCCCC !important;
    }
