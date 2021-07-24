@@ -5616,7 +5616,7 @@ body.lock {
    }
 
    .s-s14-form-no {
-      width: 100%;   
+      width: 100%;
       position: absolute;
       top: 120%;
       transform: translateY(0) translateX(50%);
@@ -5716,4 +5716,85 @@ body.lock {
       background: #393333;
       opacity: 1;
    }
+}
+
+.s-setcion16 {
+
+   background: #FFCF5C;
+   overflow: hidden;
+}
+
+.s-s16-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   padding-top: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
+   padding-bottom: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s16-container>* {
+   position: relative;
+   z-index: 2;
+}
+
+.s-s16-container::after {
+   content: url(../img/Services/Calculator.png);
+   position: absolute;
+   left: -50px;
+   top: 0;
+   opacity: 0.3;
+}
+
+.s-s16-title {}
+
+.s-title {}
+
+.s-s16-content {
+   flex: 0 1 600px;
+}
+
+.s-s16-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s16-button-wrap {}
+
+.s-s16-button {
+   max-width: calc(235px + (300 - 235) * ((100vw - 375px) / (1920 - 375)));
+   width: 100%;
+   background: #393333;
+   padding: 16px;
+   height: 55px;
+   display: inline-block;
+   margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 22px;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+@media(max-width: 991px) {
+   .s-s16-container {
+      display: block;
+      text-align: center;
+   }
+
+   .s-s16-text {
+      margin-top: 10px;
+   }
+}
+
+@media(max-width: 600px){
+   .s-s16-container::after {
+  display: none;
+}
 }
