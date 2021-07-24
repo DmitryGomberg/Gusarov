@@ -2045,9 +2045,12 @@ body.lock {
    position: relative;
 }
 
-.s6__card:hover {
-   background: #FFCF5C;
+@media(min-width: 991px) {
+   .s6__card:hover {
+      background: #FFCF5C;
+   }
 }
+
 
 .s6__card-img {
    position: absolute;
@@ -2543,9 +2546,12 @@ body.lock {
    cursor: pointer;
 }
 
-.s11__item:hover {
-   background-color: #FFCF5C;
+@media(min-width: 991px) {
+   .s11__item:hover {
+      background-color: #FFCF5C;
+   }
 }
+
 
 .s11__info {
    font-family: TTFirs-ExtraBold;
@@ -3276,9 +3282,12 @@ body.lock {
    transition: color .2s ease;
 }
 
-.footer__link>a:hover {
-   color: #FFC24B;
+@media(min-width: 991px) {
+   .footer__link>a:hover {
+      color: #FFC24B;
+   }
 }
+
 
 .footer__center {
    flex: 0 1 330px;
