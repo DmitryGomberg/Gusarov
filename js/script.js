@@ -1,9 +1,17 @@
 $(document).ready(function () {
    if ($(document).width() < '991') {
-      $(".s-s18-door-yandex").attr({href: "#modal-yandex"});
-      $(".s-s18-door-google").attr({href: "#modal-google"});
-      $(".s-s18-door-yandex").attr({'data-fancybox': "gallery-yan"});
-      $(".s-s18-door-google").attr({'data-fancybox': "gallery-google"});
+      $(".s-s18-door-yandex").attr({
+         href: "#modal-yandex"
+      });
+      $(".s-s18-door-google").attr({
+         href: "#modal-google"
+      });
+      $(".s-s18-door-yandex").attr({
+         'data-fancybox': "gallery-yan"
+      });
+      $(".s-s18-door-google").attr({
+         'data-fancybox': "gallery-google"
+      });
    }
    console.log('fedfd');
    let header = $('.header');
@@ -51,12 +59,19 @@ $(document).ready(function () {
       $(".tab5_item").hide().eq($(this).index()).fadeIn();
    }).eq(0).addClass("active");
 
+
    $(".tab6_item").not(":last").hide();
    $(".tab6").click(function () {
       $(".tab6").removeClass("active").eq($(this).index()).addClass("active");
       $(".tab6_item").hide().eq($(this).index()).fadeIn();
    }).eq(0).addClass("active");
 
+   $(".tab7_item").not(":first").hide();
+   $(".tab7").click(function () {
+      $(this).addClass("active");
+      $(".tab7").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tab7_item").hide().eq($(this).index()).fadeIn();
+   }).eq(0).addClass("active");;
 
    var currentTab = 0;
    $('.s-s14-button-wrap').addClass('o');
@@ -276,6 +291,33 @@ $(document).ready(function () {
       autoHeight: true,
       spaceBetween: 40
    });
+   const swiperfferf = new Swiper('.swiper-container-review', {
+      // Optional parameters
+      allowTouchMove: false,
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-review',
+         prevEl: '.swiper-button-prev-review',
+      },
+      pagination: {
+         el: ".swiper-pagination-review",
+         type: "fraction",
+      },
+   });
+
+   const swiperffedvrf = new Swiper('.swiper-container-clients', {
+      // Optional parameters
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-clients',
+         prevEl: '.swiper-button-prev-clients',
+      },
+      pagination: {
+         el: ".swiper-pagination-clients",
+         type: "fraction",
+      },
+   });
+
    var win = $(window).height() - 80;
    $('.s1__links-scroll').click(function () {
       $('body,html').animate({
