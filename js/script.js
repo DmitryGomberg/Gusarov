@@ -7,8 +7,22 @@ $(document).ready(function () {
          prevEl: '.swiper-button-prev-clients',
       },
       slidesPerView: 1,
+      spaceBetween: 30,
       pagination: {
          el: ".swiper-pagination-clients",
+         type: "fraction",
+      },
+   });
+   const аауаау = new Swiper('.swiper-container-audio', {
+      // Optional parameters
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-audio',
+         prevEl: '.swiper-button-prev-audio',
+      },
+      slidesPerView: 1,
+      pagination: {
+         el: ".swiper-pagination-audio",
          type: "fraction",
       },
    });
