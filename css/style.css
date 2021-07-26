@@ -6405,9 +6405,11 @@ body.lock {
    text-align: left;
    margin-right: 20px;
 }
-.s-section19{
+
+.s-section19 {
    padding-bottom: 104px;
 }
+
 .swiper-button-prev-review {
    position: absolute;
    top: 50%;
@@ -6649,4 +6651,74 @@ body.lock {
    .swiper-pagination-clients {
       transform: translateX(-30px);
    }
+}
+
+.s-s19-tab-workers {
+   display: grid;
+   gap: calc(20px + (78 - 20) * ((100vw - 375px) / (1920 - 375)));
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.s-s19-tab-worker {
+   background: #FFFFFF;
+   padding: 25px;
+   border: 1px solid #CCCCCC;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.s-s19-tab-worker-img {
+   margin-right: 15px;
+   max-width: calc(60px + (150 - 60) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s19-tab-worker-img>img {
+   width: 100%;
+}
+
+.s-s19-tab-info {
+   text-align: left;
+   width: 100%;
+
+}
+
+.s-s19-tab-info-foot {
+   font-family: RadiateSans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(16px  + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   width: 100%;
+   text-align: center;
+   color: #FFC24B;
+   margin-top: calc(30px  + (50 - 30) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s19-tab-info-name {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s19-tab-info-worktype {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(10px + (16 - 10) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+
+}
+
+.s-s19-tab-info-word {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
 }

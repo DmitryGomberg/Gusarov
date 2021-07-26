@@ -1,4 +1,17 @@
 $(document).ready(function () {
+   const swiperffedvrf = new Swiper('.swiper-container-clients', {
+      // Optional parameters
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-clients',
+         prevEl: '.swiper-button-prev-clients',
+      },
+      slidesPerView: 1,
+      pagination: {
+         el: ".swiper-pagination-clients",
+         type: "fraction",
+      },
+   });
    if ($(document).width() < '991') {
       $(".s-s18-door-yandex").attr({
          href: "#modal-yandex"
@@ -305,18 +318,7 @@ $(document).ready(function () {
       },
    });
 
-   const swiperffedvrf = new Swiper('.swiper-container-clients', {
-      // Optional parameters
-      // Navigation arrows
-      navigation: {
-         nextEl: '.swiper-button-next-clients',
-         prevEl: '.swiper-button-prev-clients',
-      },
-      pagination: {
-         el: ".swiper-pagination-clients",
-         type: "fraction",
-      },
-   });
+
 
    var win = $(window).height() - 80;
    $('.s1__links-scroll').click(function () {
