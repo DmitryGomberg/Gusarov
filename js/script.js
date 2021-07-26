@@ -1,4 +1,10 @@
 $(document).ready(function () {
+   if ($(document).width() < '991') {
+      $(".s-s18-door-yandex").attr({href: "#modal-yandex"});
+      $(".s-s18-door-google").attr({href: "#modal-google"});
+      $(".s-s18-door-yandex").attr({'data-fancybox': "gallery-yan"});
+      $(".s-s18-door-google").attr({'data-fancybox': "gallery-google"});
+   }
    console.log('fedfd');
    let header = $('.header');
    $(window).scroll(function () {
