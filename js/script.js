@@ -66,6 +66,19 @@ $(document).ready(function () {
          type: "fraction",
       },
    });
+   const аауdvвамfbfbcdаау = new Swiper('.swiper-container-work2', {
+      navigation: {
+         nextEl: '.swiper-button-next-work2',
+         prevEl: '.swiper-button-prev-work2',
+      },
+      autoHeight: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+         el: ".swiper-pagination-work2",
+         type: "fraction",
+      },
+   });
    if ($(document).width() < '991') {
       $(".s-s18-door-yandex").attr({
          href: "#modal-yandex"

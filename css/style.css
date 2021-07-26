@@ -3025,6 +3025,18 @@ body.lock {
    display: none;
 }
 
+.swiper-pagination-work2 {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 140%;
+   color: #cccccc;
+   bottom: 0px;
+   transform: translateX(0);
+   left: -30px;
+}
+
 .swiper-pagination-review {
    font-family: Century Gothic;
    font-style: normal;
@@ -6897,7 +6909,19 @@ body.lock {
 .swiper-button-next-work>img {
    width: 100%;
 }
+.swiper-button-next-work2 {
+   max-width: 36px;
+   position: absolute;
+   bottom: 8px;
+   transform: translateX(40px);
+   right: 50%;
+   cursor: pointer;
+   z-index: 10;
+}
 
+.swiper-button-next-work2>img {
+   width: 100%;
+}
 .s-section20 {
    text-align: center;
    margin-bottom: 100px;
@@ -7060,8 +7084,97 @@ body.lock {
       cursor: pointer;
    }
 
+   .s-s20-pc {
+      margin-right: 0px;
+      margin-left: 0px;
+   }
+
    .swiper-container-free {
       margin-right: 0px;
       margin-left: 0px;
    }
 }
+
+.s-s20-pc {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   text-align: left;
+   margin-right: 80px;
+   margin-left: 80px;
+}
+
+@media(max-width: 991px) {
+   .s-s20-pc {
+      display: none;
+   }
+}
+
+.s-s20-left {
+   flex: 0 1 50%;
+   max-width: 570px;
+   margin-right: 20px;
+}
+
+.s-s20-work-name {
+   font-family: RadiateSans-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(16px + (25 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   text-transform: uppercase;
+   color: #393333;
+   margin-bottom: 10px;
+}
+
+.s-s20-work-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-bottom: 40px;
+}
+
+.s-s20-right {
+   flex: 0 1 50%;
+   max-width: 710px;
+}
+
+.s-s20-mo {
+   display: none;
+   position: relative;
+   padding-bottom: 20px;
+}
+
+@media(max-width: 991px) {
+   .s-s20-mo {
+      display: block;
+      text-align: left;
+   }
+}
+
+.swiper-container {}
+
+.swiper-container-work2 {}
+
+.swiper-wrapper {}
+
+.swiper-wrapper-work2 {}
+
+.swiper-slide {}
+
+.swiper-slide-work2 {}
+
+.s-s20-work-name {}
+
+.s-s20-work-text {}
+
+.swiper-pagination {}
+
+.swiper-pagination-work2 {}
+
+.swiper-button-prev-work2 {}
+
+.swiper-button-next-work2 {}
