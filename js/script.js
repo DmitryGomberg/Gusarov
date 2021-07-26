@@ -26,6 +26,34 @@ $(document).ready(function () {
          type: "fraction",
       },
    });
+   const аауdvcdаау = new Swiper('.swiper-container-work', {
+      navigation: {
+         nextEl: '.swiper-button-next-work',
+         prevEl: '.swiper-button-prev-work',
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+         el: ".swiper-pagination-work",
+         type: "fraction",
+      },
+      breakpoints: {
+         // when window width is >= 320px
+         320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+         },
+         // when window width is >= 480px
+         800: {
+            slidesPerView: 2,
+            spaceBetween: 30
+         },
+         // when window width is >= 1255px
+         1255: {
+            slidesPerView: 3
+         }
+      }
+   });
    if ($(document).width() < '991') {
       $(".s-s18-door-yandex").attr({
          href: "#modal-yandex"
@@ -98,7 +126,14 @@ $(document).ready(function () {
       $(this).addClass("active");
       $(".tab7").removeClass("active").eq($(this).index()).addClass("active");
       $(".tab7_item").hide().eq($(this).index()).fadeIn();
-   }).eq(0).addClass("active");;
+   }).eq(0).addClass("active");
+
+   $(".tab8_item").not(":first").hide();
+   $(".tab8").click(function () {
+      $(this).addClass("active");
+      $(".tab8").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tab8_item").hide().eq($(this).index()).fadeIn();
+   }).eq(0).addClass("active");
 
    var currentTab = 0;
    $('.s-s14-button-wrap').addClass('o');
