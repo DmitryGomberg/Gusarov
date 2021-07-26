@@ -54,6 +54,18 @@ $(document).ready(function () {
          }
       }
    });
+   const аауdvfbfbcdаау = new Swiper('.swiper-container-free', {
+      navigation: {
+         nextEl: '.swiper-button-next-free',
+         prevEl: '.swiper-button-prev-free',
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+         el: ".swiper-pagination-free",
+         type: "fraction",
+      },
+   });
    if ($(document).width() < '991') {
       $(".s-s18-door-yandex").attr({
          href: "#modal-yandex"
