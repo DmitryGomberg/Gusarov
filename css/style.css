@@ -4372,10 +4372,13 @@ body.lock {
    transform: translateY(-50%) rotate(45deg);
 }
 
-.panel-heading:hover {
-   background-color: #fff;
-   cursor: pointer;
+@media(min-width: 991px) {
+   .panel-heading:hover {
+      background-color: #fff;
+      cursor: pointer;
+   }
 }
+
 
 .panel-collapse {
    font-family: Century Gothic;
@@ -5744,6 +5747,8 @@ body.lock {
    left: -50px;
    top: 0;
    opacity: 0.3;
+   display: flex;
+   align-items: center;
 }
 
 .s-s16-title {}
@@ -5978,4 +5983,97 @@ body.lock {
       width: 100%;
       background-image: url(../img/Services/s15-bg-mob.png);
    }
+}
+
+.s-s17-wrapper .panel-heading.in>a {
+   color: #393333;
+}
+
+.s-s17-wrapper .panel-heading {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
+   letter-spacing: 0.03em;
+   color: #393333;
+}
+
+.s-section17 {
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+   text-align: center;
+   background: #F7F5F5;
+}
+
+.s-s17-container {}
+
+.s-s17-title {
+   margin-bottom: calc(10px + (30 - 10) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s17-wrapper {
+   text-align: left;
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.panel-top {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.panel-top-img {
+   margin-right: calc(10px + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   max-width: calc(70px  + (100 - 70) * ((100vw - 375px) / (1920 - 375)))
+}
+.panel-top-img>img{
+   width: 100%;
+}
+.panel-top-info {}
+
+.panel-top-name {
+   margin-bottom: calc(5px + (10 - 5) * ((100vw - 375px) / (1920 - 375)));
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+}
+
+.s-s17-wrapper .panel-heading.in {
+   background-color: #fff;
+}
+.s-s17-wrapper .panel-heading{
+   background-color: #fff;
+   transition: background-color .2s ease;
+}
+.panel-top-work {}
+
+.s-s17-wrapper .panel-inner {
+   max-width: 100%;
+}
+
+.panel-info {
+   margin-left: 20px;
+   margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   max-width: 100%;
+   width: 100%;
+}
+
+.panel-info-item {
+   list-style-type: disc;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(15px + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+   margin-top: 2px;
+}
+
+.s-s17-wrapper>.panel{
+   margin-bottom: calc(10px  + (20 - 10) * ((100vw - 375px) / (1920 - 375)))
 }
