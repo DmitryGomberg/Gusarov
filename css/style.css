@@ -1157,7 +1157,7 @@ body.lock {
       display: none;
    }
 
-   .header-services .header__left-decor {
+   .serv .header__left-decor {
       display: block;
    }
 
@@ -6624,7 +6624,7 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
+   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
 }
@@ -7326,5 +7326,79 @@ body.lock {
       flex-direction: column;
       align-items: flex-start;
    }
-   .s-s21-right-mob {margin-top: 30px;}
+
+   .s-s21-right-mob {
+      margin-top: 30px;
+   }
+}
+
+.s-section22 {
+   width: 100%;
+   padding-top: calc(0px + (50 - 0) * ((100vw - 375px) / (1920 - 375)));
+   padding-bottom: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
+   text-align: center;
+}
+
+.s-s22-title {
+   margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-title {}
+
+.s-s22-cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
+   margin-bottom: 50px;
+}
+
+.s-s22-card {
+   display: flex;
+   align-items: flex-start;
+}
+
+.s-s22-card-info {
+   text-align: left;
+   margin-left: 20px;
+}
+
+.s-s22-card-info-name {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s22-card-info-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s22-subtitle {
+   font-family: RadiateSans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(18px + (30 - 18) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(29px + (48 - 29) * ((100vw - 375px) / (1920 - 375)));
+   color: #FFC24B;
+   margin-bottom: 20px;
+}
+
+.s9__form {}
+
+.s9__button {}
+
+@media(max-width: 600px) {
+   .s-s22-cards {
+      grid-template-columns: 1fr;
+   }
+   .s-s22-card>img{
+      max-width: 30px;
+   }
 }
