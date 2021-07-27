@@ -1,4 +1,9 @@
 $(document).ready(function () {
+   $(function () {
+      $('.only-one').on('click', function () {
+         $('.only-one').not(this).prop('checked', false);
+      });
+   });
    const swiperffedvrf = new Swiper('.swiper-container-clients', {
       // Optional parameters
       // Navigation arrows
@@ -479,28 +484,3 @@ for (i = 0; i < l; i++) {
       this.classList.toggle("select-arrow-active");
    });
 }
-
-function closeAllSelect(elmnt) {
-   /*a function that will close all select boxes in the document,
-   except the current select box:*/
-   var x, y, i, xl, yl, arrNo = [];
-   x = document.getElementsByClassName("select-items");
-   y = document.getElementsByClassName("select-selected");
-   xl = x.length;
-   yl = y.length;
-   for (i = 0; i < yl; i++) {
-      if (elmnt == y[i]) {
-         arrNo.push(i)
-      } else {
-         y[i].classList.remove("select-arrow-active");
-      }
-   }
-   for (i = 0; i < xl; i++) {
-      if (arrNo.indexOf(i)) {
-         x[i].classList.add("select-hide");
-      }
-   }
-}
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);

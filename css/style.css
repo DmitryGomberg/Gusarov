@@ -7580,3 +7580,142 @@ body.lock {
       margin-right: 0;
    }
 }
+
+.s-section24 {
+   padding-top: calc(0px + (50 - 0) * ((100vw - 375px) / (1920 - 375)));
+   background: #F7F5F5;
+   padding-bottom: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s24-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.s-s24-left {
+   flex: 0 1 50%;
+   padding-right: 30px;
+}
+
+.s-s24-left>img {
+   width: 100%;
+   max-width: calc(250px + (600 - 250) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s24-right {
+   flex: 0 1 50%;
+}
+
+.s-title {}
+
+.s-s24-title {}
+
+.s-s24-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   margin-top: 10px;
+   color: #393333;
+}
+
+.s-s24-present {}
+
+.s-s24-present-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+
+.form__examples {
+   margin-bottom: 10px;
+}
+
+.form__examples-item {
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.form__examples-item>label {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-left: 20px;
+}
+
+.check {
+   width: 25px;
+   height: 25px;
+}
+
+.only-one {}
+
+.s-s24-submit {
+   max-width: 375px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(45px + (60 - 45) * ((100vw - 375px) / (1920 - 375)));
+   background: #393333;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   color: #FFFFFF;
+}
+
+.s-s24-submit-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-top: 10px;
+}
+
+.s-s24-num {}
+
+@media(max-width: 991px) {
+   .s-s24-container {
+      flex-direction: column;
+   }
+
+   .s-s24-title {
+      width: 100%;
+      text-align: center;
+   }
+
+   .s-s24-left>img {
+      margin: 0 auto;
+   }
+
+   .s-s24-left {
+      display: flex;
+      justify-content: center;
+   }
+
+   .s-s24-submit-text {
+      width: 100%;
+      text-align: center;
+   }
+}
+
+@media(max-width: 600px) {
+   .s-s24-submit {
+      max-width: 100%;
+
+   }
+}
