@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+   var sliderAdded = false;
+   $(window).scroll(function () {
+      if (!sliderAdded && $(window).scrollTop() > 10000) {
+         $('.secret-modal').addClass('show');
+         sliderAdded = true;
+      }
+   });
+   $(".modal-close").click(function () {
+      $('.secret-modal').removeClass('show');
+   });
    $(function () {
       $('.only-one').on('click', function () {
          $('.only-one').not(this).prop('checked', false);
@@ -125,7 +136,7 @@ $(document).ready(function () {
    }).eq(0).addClass("active");
 
    $(".tab3_item").hide();
-   $(".tab3").addClass("active")
+   $(".tab3").addClass("active");
    $(".tab3").click(function () {
       $(".tab3").removeClass("active").eq($(this).index()).addClass("active");
       $(".s4__tap").hide();

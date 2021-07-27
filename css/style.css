@@ -1314,14 +1314,17 @@ body.lock {
 .tabs4 {
    display: none;
 }
-.tab.current{
+
+.tab.current {
    color: #fff;
 }
-.tab.current::after{
+
+.tab.current::after {
    opacity: 1;
    visibility: visible;
    background-color: #fff;
 }
+
 @media(max-width: 1150px) {
    .map-img-wrap {
       display: flex;
@@ -1371,7 +1374,7 @@ body.lock {
    }
 
    .s-s6-accordeon {
-      display: block!important;
+      display: block !important;
       flex: 0 1 100% !important;
       padding-right: 0 !important;
    }
@@ -7726,4 +7729,39 @@ body.lock {
       max-width: 100%;
 
    }
+}
+
+.secret-modal.show {
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+}
+
+.secret-modal {
+display: none;
+   
+   position: fixed;
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.336);
+   top: 0;
+   left: 0;
+   z-index: 40;
+}
+
+.modal-close {
+   position: absolute;
+   right: 30px;
+   top: 30px;
+cursor: pointer;
+}
+
+.secret-modal>.modal {
+   display: block !important;
+   position: relative;
+}
+
+.secret-modal>.modal .modal__form {
+   margin: 0 auto;
 }
