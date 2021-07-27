@@ -6624,7 +6624,7 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
 }
@@ -7398,7 +7398,185 @@ body.lock {
    .s-s22-cards {
       grid-template-columns: 1fr;
    }
-   .s-s22-card>img{
+
+   .s-s22-card>img {
       max-width: 30px;
+   }
+}
+
+.s-section23 {
+   background: #F7F5F5;
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+}
+
+.conatiner {}
+
+.s-s23-conatiner {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.s-s23-left {
+   flex: 0 1 50%;
+   padding-right: 20px;
+}
+
+.s-s23-card {
+   display: flex;
+   align-items: center;
+   margin-top: calc(10px + (20 -10) * ((100vw - 375px) / (1920 - 375)));
+
+}
+
+.s-s23-card-image {
+   max-width: calc(70px + (130 - 70) * ((100vw - 375px) / (1920 - 375)));
+   margin-right: calc(15px + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s23-card-image>img {
+   max-width: 100%;
+}
+
+.s-s23-card-info {
+   text-align: left;
+}
+
+.s-s23-card-info-title {
+   font-family: RadiateSans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (26 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(22px + (41 - 22) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+}
+
+.s-s23-card-info-work {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+}
+
+.s-s23-text {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 140%;
+   color: #393333;
+   margin-top: 30px;
+   max-width: 660px;
+}
+
+.s-s23-text>a {
+   color: #FFC24B;
+}
+
+.s-s23-links {
+   display: flex;
+   align-items: center;
+   margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s23-link {
+   max-width: calc(235px + (300 - 235) * ((100vw - 375px) / (1920 - 375)));
+   width: 100%;
+   height: calc(45px + (50 - 45) * ((100vw - 375px) / (1920 - 375)));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: 22px;
+   color: #FFFFFF;
+}
+
+.s-s23-link-main {
+   background: #393333;
+   margin-right: calc(15px + (40 - 15) * ((100vw - 375px) / (1920 - 375)));
+   margin-bottom: 10px;
+}
+
+.s-s23-link-telegram {
+   background: #32B4FF;
+   margin-bottom: 15px;
+
+}
+
+.s-s23-link-telegram>img {
+   margin-right: calc(10px + (20 -10) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s23-right {
+   flex: 0 1 50%;
+}
+
+.s-s23-more {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.s-s23-more-button {
+   border: 1px solid #393333;
+   background-color: #fff;
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (22 - 17) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+   max-width: calc(235px + (300 - 235) * ((100vw - 375px) / (1920 - 375)));
+   height: calc(45px + (50 - 45) * ((100vw - 375px) / (1920 - 375)));
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.s-s23-right .panel-heading {
+   background-color: #fff;
+   padding-right: 80px;
+}
+
+.s-s23-right .panel-heading:hover>a {
+   color: #FFC24B;
+}
+
+.s-s23-right .panel {
+   margin-bottom: 20px;
+}
+
+@media(max-width: 991px) {
+   .s-s23-conatiner {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .s-s23-right {
+      width: 100%;
+   }
+
+   .s-s23-left {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
+
+@media(max-width: 600px) {
+   .s-s23-links {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .s-s23-link-main {
+      margin-right: 0;
    }
 }
