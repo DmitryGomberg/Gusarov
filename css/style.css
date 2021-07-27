@@ -1314,7 +1314,14 @@ body.lock {
 .tabs4 {
    display: none;
 }
-
+.tab.current{
+   color: #fff;
+}
+.tab.current::after{
+   opacity: 1;
+   visibility: visible;
+   background-color: #fff;
+}
 @media(max-width: 1150px) {
    .map-img-wrap {
       display: flex;
