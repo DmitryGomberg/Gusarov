@@ -1099,7 +1099,6 @@ body.lock {
    }
 }
 
-
 @media(min-height:890px) {
    .s1__links-items {
       display: flex;
@@ -1123,13 +1122,13 @@ body.lock {
 }
 
 @media(max-height:890px) {
-   .s1__links-items {
+   .section1 .s1__links-items {
       display: none;
    }
 }
 
 @media(max-height: 890px) {
-   .s1__links {
+   .section1 .s1__links {
       left: -22px;
       bottom: 200px;
    }
@@ -3889,9 +3888,9 @@ body.lock {
    display: flex;
 }
 
-@media(max-width: 1700px) {
+@media(max-height: 950px) {
    .s-section1 .s1__links {
-      display: none;
+      bottom: 375px;
    }
 }
 
@@ -7738,8 +7737,8 @@ body.lock {
 }
 
 .secret-modal {
-display: none;
-   
+   display: none;
+
    position: fixed;
    width: 100%;
    max-width: 100%;
@@ -7754,7 +7753,7 @@ display: none;
    position: absolute;
    right: 30px;
    top: 30px;
-cursor: pointer;
+   cursor: pointer;
 }
 
 .secret-modal>.modal {
