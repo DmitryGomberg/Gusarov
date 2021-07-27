@@ -976,15 +976,18 @@ h6 {
    transition: all .2s ease;
 }
 
-.tab.active::after {
+.tab:hover::after {
    opacity: 1;
    visibility: visible;
 }
 
-.tab.active::before {
+.tab:hover::before {
    opacity: 1;
    visibility: visible;
    right: -66px;
+}
+.tab.current::before {
+   display: none;
 }
 
 body.lock {
