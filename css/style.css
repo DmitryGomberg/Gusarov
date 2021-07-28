@@ -986,6 +986,7 @@ h6 {
    visibility: visible;
    right: -66px;
 }
+
 .tab.current::before {
    display: none;
 }
@@ -4001,27 +4002,32 @@ body.lock {
    position: fixed;
    left: 0;
    bottom: 0;
-   padding: calc(9px  + (15 - 9) * ((100vw - 375px) / (1920 - 375))) calc(9px  + (20 - 9) * ((100vw - 375px) / (1920 - 375)));
+   padding: calc(9px + (15 - 9) * ((100vw - 375px) / (1920 - 375))) calc(9px + (20 - 9) * ((100vw - 375px) / (1920 - 375)));
    background: #FFCF5C;
-   max-width: calc(180px  + (291 - 180) * ((100vw - 375px) / (1920 - 375)));
+   max-width: calc(180px + (291 - 180) * ((100vw - 375px) / (1920 - 375)));
    display: flex;
    align-items: center;
    justify-content: space-between;
-   z-index: 3;
+   z-index: 4;
+   -webkit-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
+-moz-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
+box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
 }
 
 .gift-img {
-   margin-right: calc(13px  + (25 - 13) * ((100vw - 375px) / (1920 - 375)));
+   margin-right: calc(13px + (25 - 13) * ((100vw - 375px) / (1920 - 375)));
    max-width: calc(19px + (38 - 19) * ((100vw - 375px) / (1920 - 375)));
 }
-.gift-img>img{
+
+.gift-img>img {
    width: 100%;
 }
+
 .gift-text {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: calc(12px  + (18 - 12) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
 }
@@ -4489,9 +4495,11 @@ body.lock {
    padding: 19px 100px;
    cursor: pointer;
 }
-.s-s6-button>button:hover{
+
+.s-s6-button>button:hover {
    background: #554c4c;
 }
+
 .panel-inner {
    max-width: 500px;
 }
@@ -4562,6 +4570,12 @@ body.lock {
    color: #393333;
    transition: background .2s ease;
    margin-bottom: 20px;
+   cursor: pointer;
+   transition: all .2s ease;
+}
+
+.tab5:hover {
+   background-color: rgb(241, 232, 180);
 }
 
 .tab5.active {
@@ -4782,9 +4796,11 @@ body.lock {
    color: #FFFFFF;
    margin-top: 30px;
 }
-.s-s8-subtitle>a:hover{
+
+.s-s8-subtitle>a:hover {
    background: #2c98d6;
 }
+
 .s-s8-subtitle>a>img {
    margin-right: 20px;
 }
@@ -4942,9 +4958,11 @@ body.lock {
    color: #FFFFFF;
    display: inline-block;
 }
-.s-s10-all-cases:hover{
+
+.s-s10-all-cases:hover {
    background: #494242;
 }
+
 .s-s10-wrapper {
    display: flex;
    justify-content: space-between;
@@ -4987,9 +5005,11 @@ body.lock {
    margin-top: calc(0px + (40 - 0) * ((100vw - 375px) / (1920 - 375)));
    display: inline-block;
 }
-.s-s10-button:hover{
+
+.s-s10-button:hover {
    background: #4b4343;
 }
+
 .s-s10-card {
    flex: 0 1 50%;
 }
@@ -5191,9 +5211,11 @@ body.lock {
    color: #FFFFFF;
    border: none;
 }
-.s-s11-but:hover{
+
+.s-s11-but:hover {
    background: #463e3e;
 }
+
 @media(max-width: 991px) {
    .s-s11-conatiner {
       flex-direction: column;
@@ -5689,8 +5711,13 @@ body.lock {
    display: inline-block;
    margin: 0 auto;
    opacity: 0.4;
+   transition: all .2s ease;
 }
-.s-s14-button:ho
+
+.s-s14-button.active:hover {
+   background: #494242;
+}
+
 .s-s14-button.active {
    opacity: 1;
 }
@@ -6076,7 +6103,7 @@ body.lock {
 }
 
 .s-s17-wrapper .panel-heading.in>a {
-   color: #393333;
+   color: #FFC24B;
 }
 
 .s-s17-wrapper .panel-heading {
@@ -6087,6 +6114,10 @@ body.lock {
    line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
    letter-spacing: 0.03em;
    color: #393333;
+}
+
+.s-s17-wrapper .panel-heading:hover>a {
+   color: #FFC24B;
 }
 
 .s-section17 {
@@ -7530,12 +7561,21 @@ body.lock {
    background: #393333;
    margin-right: calc(15px + (40 - 15) * ((100vw - 375px) / (1920 - 375)));
    margin-bottom: 10px;
+   text-replace: auto;
+}
+
+.s-s23-link-main:hover {
+   background: #4d4545;
 }
 
 .s-s23-link-telegram {
    background: #32B4FF;
-   margin-bottom: 15px;
+   transition: all .2s ease;
+   margin-bottom: 10px;
+}
 
+.s-s23-link-telegram:hover {
+   background: #2c9bdb;
 }
 
 .s-s23-link-telegram>img {
@@ -7555,7 +7595,7 @@ body.lock {
 
 .s-s23-more-button {
    border: 1px solid #393333;
-   background-color: #fff;
+   background-color: transparent;
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
@@ -7569,6 +7609,11 @@ body.lock {
    justify-content: center;
    align-items: center;
    margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+   transition: all .2s ease;
+}
+
+.s-s23-more-button:hover {
+   background-color: #fff;
 }
 
 .s-s23-right .panel-heading {
@@ -7689,7 +7734,9 @@ body.lock {
    height: 25px;
 }
 
-.only-one {}
+.only-one {
+   cursor: pointer;
+}
 
 .s-s24-submit {
    max-width: 375px;
@@ -7704,6 +7751,11 @@ body.lock {
    font-weight: bold;
    font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
    color: #FFFFFF;
+   transition: all .2s ease;
+}
+
+.s-s24-submit:hover {
+   background: #443d3d;
 }
 
 .s-s24-submit-text {
