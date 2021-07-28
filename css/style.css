@@ -5113,6 +5113,7 @@ body.lock {
    justify-content: space-between;
    position: relative;
 }
+
 .s-s11-left {
    flex: 0 1 50%;
    display: flex;
@@ -5187,27 +5188,33 @@ body.lock {
    padding: 10px 30px 10px 20px;
    border: 2px solid #393333;
    background-color: transparent;
-   height: calc(45px  + (50 - 45) * ((100vw - 375px) / (1920 - 375)));
+   height: calc(45px + (50 - 45) * ((100vw - 375px) / (1920 - 375)));
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (20 - 17) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
 }
 
 .s-s11-form>input::placeholder {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(14px  + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
-   line-height: calc(17px  + (20 - 17) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (20 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
 }
 
 .s-s11-but {
    width: 100%;
    cursor: pointer;
-   padding: calc(13px  + (15 - 13) * ((100vw - 375px) / (1920 - 375))) 65px;
+   padding: calc(13px + (15 - 13) * ((100vw - 375px) / (1920 - 375))) 65px;
    background: #393333;
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: calc(14px  + (16 - 14) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 20px;
    color: #FFFFFF;
    border: none;
