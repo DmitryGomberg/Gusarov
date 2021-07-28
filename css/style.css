@@ -4010,8 +4010,9 @@ body.lock {
    justify-content: space-between;
    z-index: 4;
    -webkit-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
--moz-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
+   -moz-box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
+   box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
+   cursor: pointer;
 }
 
 .gift-img {
@@ -5110,8 +5111,8 @@ box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
 .s-s11-conatiner {
    display: flex;
    justify-content: space-between;
+   position: relative;
 }
-
 .s-s11-left {
    flex: 0 1 50%;
    display: flex;
@@ -5186,27 +5187,27 @@ box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
    padding: 10px 30px 10px 20px;
    border: 2px solid #393333;
    background-color: transparent;
-   height: 50px;
+   height: calc(45px  + (50 - 45) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .s-s11-form>input::placeholder {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 18px;
-   line-height: 22px;
+   font-size: calc(14px  + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px  + (20 - 17) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
 }
 
 .s-s11-but {
    width: 100%;
    cursor: pointer;
-   padding: 15px 65px;
+   padding: calc(13px  + (15 - 13) * ((100vw - 375px) / (1920 - 375))) 65px;
    background: #393333;
    font-family: Century Gothic;
    font-style: normal;
    font-weight: bold;
-   font-size: 16px;
+   font-size: calc(14px  + (16 - 14) * ((100vw - 375px) / (1920 - 375)));
    line-height: 20px;
    color: #FFFFFF;
    border: none;
@@ -7831,6 +7832,7 @@ box-shadow: 7px -9px 8px 0px rgba(210, 149, 66, 0.15);
 .secret-modal>.modal {
    display: block !important;
    position: relative;
+   max-height: 100%;
 }
 
 .secret-modal>.modal .modal__form {

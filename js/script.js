@@ -1,5 +1,12 @@
 $(document).ready(function () {
+   $('.s-section1-gift').bind("click", function (e) {
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top - 70
+      }, 1000);
 
+      e.preventDefault();
+   });
    var sliderAdded = false;
    $(window).scroll(function () {
       if (!sliderAdded && $(window).scrollTop() > 10000) {
@@ -109,7 +116,7 @@ $(document).ready(function () {
          'data-fancybox': "gallery-google"
       });
    }
-   console.log('fedfd');
+
    let header = $('.header');
    $(window).scroll(function () {
       if ($(this).scrollTop() > 10) {
@@ -417,6 +424,7 @@ $(document).ready(function () {
       }, 800);
       return false;
    });
+
    $('.s-s1-bonus-arrow').click(function () {
       $('body,html').animate({
          scrollTop: $(window).height()
