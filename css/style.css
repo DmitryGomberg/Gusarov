@@ -4168,7 +4168,7 @@ body.lock {
 .s-s2-card-img {
    margin-right: calc(15px + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
    display: inline-block;
-   max-width: calc(30px  + (50 - 30) * ((100vw - 375px) / (1920 - 375)));
+   max-width: calc(30px + (50 - 30) * ((100vw - 375px) / (1920 - 375)));
 }
 
 @media(max-width: 600px) {
@@ -6321,7 +6321,7 @@ body.lock {
 .s-section18 {
    width: 100%;
    background: #F7F5F5;
-   padding: calc(0px + (50 - 0) * ((100vw - 375px) / (1920 - 375))) 0;
+   padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
    text-align: center;
    min-height: calc(495px + (727 - 495) * ((100vw - 375px) / (1920 - 375)));
    overflow: hidden;
@@ -6950,7 +6950,8 @@ body.lock {
       line-height: 140%;
       color: #393333;
       border: 1px solid #393333;
-      margin-top: 10px;
+      margin: 10px auto;
+      margin-bottom: 0;
    }
 
    .swiper-slide-clients-button-gramota>a {
@@ -8052,18 +8053,47 @@ body.lock {
 .custom-checkbox+label::before {
    content: '';
    display: inline-block;
-   width: calc(15px  + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
-   height: calc(15px  + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
+   width: calc(15px + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
+   height: calc(15px + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
    flex-shrink: 0;
    flex-grow: 0;
    border: 1px solid #393333;
-   margin-right: calc(10px  + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   margin-right: calc(10px + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
    cursor: pointer
 }
 
 .custom-checkbox:checked+label::before {
-  background-image: url("../img/ok.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: calc(9px  + (17 - 9) * ((100vw - 375px) / (1920 - 375)));
+   background-image: url("../img/ok.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: calc(9px + (17 - 9) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@media(max-width: 375px) {
+   .s-s18-card {
+      min-height: 275px;
+   }
+
+   .fancybox__content>.carousel__button.is-close {
+      top: 20px;
+      right: 20px;
+   }
+
+   .fancybox__backdrop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: var(--fancybox-bg, rgba(24, 24, 27, 0.171));
+      
+   }
+   .s-section19{
+      padding-bottom: 0;
+   }
+   .s-s24-left>img{
+      width: 250px;
+      height: 235px;
+   }
 }
