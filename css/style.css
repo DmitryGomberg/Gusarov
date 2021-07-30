@@ -1106,10 +1106,11 @@ body.lock {
       right: 100px;
    }
 }
-
-.links-mobile {
-   display: block;
+.mob-links-wrap{
    position: relative;
+}
+.links-mobile {
+   display: inline-block;
    cursor: pointer;
 }
 
