@@ -6,7 +6,7 @@ $(document).ready(function () {
             event.preventDefault();
          });
       }
-      $('.links-mobile').hover(function (event) {
+      $('.mob-links-wrap').hover(function (event) {
          $('.head__menu-dropdown').toggleClass('active');
       });
    }
