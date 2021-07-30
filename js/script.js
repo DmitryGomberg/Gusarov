@@ -284,7 +284,56 @@ $(document).ready(function () {
       $(".s-s14-step").removeClass('active');
       $(".s-s14-item").eq(currentTab).addClass('active');
       $(".s-s14-step").eq(currentTab).addClass('active');
-   })
+   });
+   $(".s-s14-step1").click(function () {
+      currentTab = 0;
+      console.log(currentTab);
+      $('.s-s14-button-wrap').addClass();
+      if (currentTab == 0) {
+         $('.s-s14-button-wrap').addClass('o');
+         $('.s-s14-button-wrap').removeClass('l');
+         $('.s-s14-button-wrap').removeClass('s');
+      }
+      console.log(currentTab);
+      $(".s-s14-item").removeClass('active');
+      $(".s-s14-step").removeClass('active');
+      $(".s-s14-next-step-img").removeClass('disable');
+      $(".s-s14-item").eq(currentTab).addClass('active');
+      $(".s-s14-step").eq(currentTab).addClass('active');
+   });
+   $(".s-s14-step2").click(function () {
+      currentTab = 1;
+      console.log(currentTab);
+      $('.s-s14-button-wrap').addClass();
+      if (currentTab == 1) {
+         $('.s-s14-button-wrap').addClass('l');
+         $('.s-s14-button-wrap').removeClass('o');
+         $('.s-s14-button-wrap').removeClass('s');
+      }
+      console.log(currentTab);
+      $(".s-s14-item").removeClass('active');
+      $(".s-s14-step").removeClass('active');
+      $(".s-s14-next-step-img").removeClass('disable');
+      $(".s-s14-item").eq(currentTab).addClass('active');
+      $(".s-s14-step").eq(currentTab).addClass('active');
+   });
+   $(".s-s14-step3").click(function () {
+      currentTab = 2;
+      console.log(currentTab);
+      $('.s-s14-button-wrap').addClass();
+      if (currentTab == 2) {
+         $('.s-s14-button-wrap').removeClass('o');
+         $('.s-s14-button-wrap').removeClass('l');
+         $('.s-s14-button-wrap').addClass('s');
+         $(".s-s14-next-step-img").addClass('disable');
+         $(".s-s14-button-submit").addClass('active');
+      }
+      console.log(currentTab);
+      $(".s-s14-item").removeClass('active');
+      $(".s-s14-step").removeClass('active');
+      $(".s-s14-item").eq(currentTab).addClass('active');
+      $(".s-s14-step").eq(currentTab).addClass('active');
+   });
 
 
    if ($(document).width() > '991') {
