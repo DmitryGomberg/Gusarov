@@ -176,11 +176,12 @@ $(document).ready(function () {
    }).eq(0).addClass("active");
 
 
-   $(".tab6_item").not(":last").hide();
+   $(".tab6_item").not(":first").hide();
+   $(".tab6").eq(0).addClass("active");
    $(".tab6").click(function () {
       $(".tab6").removeClass("active").eq($(this).index()).addClass("active");
       $(".tab6_item").hide().eq($(this).index()).fadeIn();
-   }).eq(0).addClass("active");
+   });
 
    $(".tab7_item").not(":first").hide();
    $(".tab7").click(function () {
