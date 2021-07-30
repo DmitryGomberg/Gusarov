@@ -528,9 +528,12 @@ h6 {
    .header-services {
       background: rgba(0, 0, 0, 0.3);
    }
-.header__left-title{
-   font-family: TTFirs-bold;letter-spacing: 0.1em;
-}
+
+   .header__left-title {
+      font-family: TTFirs-bold;
+      letter-spacing: 0.1em;
+   }
+
    .header-services .header__left-title>a {
       color: #fff;
       transition: color .2s ease;
@@ -2172,7 +2175,7 @@ body.lock {
       background: #FFCF5C;
    }
 
-   
+
 }
 
 
@@ -2542,8 +2545,9 @@ body.lock {
    .header__bottom-link {
       margin-left: 0;
    }
-.s-section1 .s1__links {
-      display: none!important;
+
+   .s-section1 .s1__links {
+      display: none !important;
    }
 
 }
@@ -4088,10 +4092,11 @@ body.lock {
    animation: dragServices 1s ease-in-out infinite;
    animation-direction: alternate;
    cursor: pointer;
-   
+
 }
-.s-s1-bonus-arrow>img{
-   max-width: calc(15px  + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
+
+.s-s1-bonus-arrow>img {
+   max-width: calc(15px + (25 - 15) * ((100vw - 375px) / (1920 - 375)));
    width: 100%;
 }
 
@@ -4870,7 +4875,7 @@ body.lock {
    }
 
    .s-s7-card-name::before {
-      font-size: calc(29px  + (36 - 29) * ((100vw - 375px) / (1920 - 375)));
+      font-size: calc(29px + (36 - 29) * ((100vw - 375px) / (1920 - 375)));
    }
 
    .s-s7-card>p {
@@ -5414,7 +5419,7 @@ body.lock {
 }
 
 .s-s12-card {
-   padding: calc(20px  + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+   padding: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
    background-color: #fff;
    display: flex;
    align-items: flex-start;
@@ -5508,12 +5513,15 @@ body.lock {
       flex-direction: column;
       align-items: center;
    }
-.s-s7-card>p{
-   margin-top: 0;
-}
-.tab6 {
-  margin-left: 0!important;
-}
+
+   .s-s7-card>p {
+      margin-top: 0;
+   }
+
+   .tab6 {
+      margin-left: 0 !important;
+   }
+
    .s-s13-left {
       margin-bottom: 10px;
       text-align: center;
@@ -8156,4 +8164,15 @@ body.lock {
       width: 250px;
       height: 235px;
    }
+}
+
+.s-s14-input-check {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: normal;
+   font-size: calc(12px  + (16 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(15px  + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
+   margin-top: calc(10px  + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   color: #393333;
+   opacity: 0.8;
 }
