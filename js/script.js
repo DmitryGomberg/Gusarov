@@ -1,4 +1,15 @@
 $(document).ready(function () {
+   if ($(window).innerHeight() < '800') {
+      if ($(document).width() < '991') {
+         $('.links-mobile').click(function (event) {
+            $('.head__menu-dropdown').toggleClass('active');
+            event.preventDefault();
+         });
+      }
+      $('.links-mobile').hover(function (event) {
+         $('.head__menu-dropdown').toggleClass('active');
+      });
+   }
    var sliderAdded = false;
    $(window).scroll(function () {
       if (!sliderAdded && $(window).scrollTop() > 10000) {
@@ -95,13 +106,14 @@ $(document).ready(function () {
       },
    });
    if ($(document).width() < '991') {
+
       $('.s-s11-but').text('Хочу консультацию!');
       $('.s-s15-foot').text('При заказе любого тарифа SEO-аудит для вашего бизнеса в подарок!');
       $('.s-s21-title').text('ТОП-КАНАЛ ПО МАРКЕТИНГУ В СНГ');
       $('.s9-replace').text('Хочу консультацию!');
       $('.s-s23-card-info-title').text('Отвечает Андрей Гусаров');
       $('.s-s23-card-info-work').text('Директор агентства GUSAROV');
-$('.s-s24-title').text('ДЛЯ ВАС ПОДАРОК! ЛИСТАЙТЕ НИЖЕ:');
+      $('.s-s24-title').text('ДЛЯ ВАС ПОДАРОК! ЛИСТАЙТЕ НИЖЕ:');
       $('.s-s23-link-main').text('Спросить у менеджера');
       $('.s-s23-link-telegram-replace').text('Спросить у Гусарова');
       $(".s-s18-door-yandex").attr({
@@ -292,6 +304,7 @@ $('.s-s24-title').text('ДЛЯ ВАС ПОДАРОК! ЛИСТАЙТЕ НИЖЕ:
       $(".member-team-info").addClass('active');
       $(".team-img").parent().addClass('active');
    }
+
    if ($(document).width() > '991') {
       $('.menu-close, .menu-open').click(function (event) {
          $('.header__menu').toggleClass('active');
