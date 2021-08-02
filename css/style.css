@@ -6676,9 +6676,10 @@ body.lock {
 @media(max-width: 600px) {
    .s-s18-card {
       width: 100%;
-      right: 0;
+      left: 0;
       top: 33%;
       max-height: 277px;
+      transform: translate(0)
    }
 }
 
@@ -7011,7 +7012,9 @@ body.lock {
    margin-right: 70px;
    margin-left: 70px;
 }
-
+.tab7_item-sp{
+   margin-bottom: 50px;
+}
 .swiper-slide-clients-button-gramota {
    display: none;
 }
