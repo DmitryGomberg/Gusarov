@@ -185,20 +185,22 @@ textarea {
 [type="search"]::-webkit-search-decoration {
    -webkit-appearance: none;
 }
-button, 
-button:active, 
+
+button,
+button:active,
 button:focus,
-input, 
-input:active, 
+input,
+input:active,
 input:focus,
-div, 
-div:active, 
+div,
+div:active,
 div:focus,
- a, 
-a:active, 
-a:focus{
-    outline: none;
+a,
+a:active,
+a:focus {
+   outline: none;
 }
+
 ::-webkit-file-upload-button {
    -webkit-appearance: button;
    font: inherit;
@@ -5571,9 +5573,11 @@ body.lock {
    -ms-user-select: none;
    user-select: none;
 }
-.container-radio.active{
+
+.container-radio.active {
    font-weight: 900;
 }
+
 .container-radio>input {
    position: absolute;
    opacity: 0;
@@ -5781,10 +5785,14 @@ body.lock {
    font-size: 18px;
    line-height: 22px;
    color: #393333;
-   opacity: 0.8;
+   opacity: 1;
    height: 50px;
    max-width: 400px;
    width: 100%;
+}
+
+.fancybox__container * {
+   transition: none !important;
 }
 
 .custom-select select {
@@ -5829,6 +5837,9 @@ body.lock {
    cursor: pointer;
    user-select: none;
    background-color: #fff;
+   opacity: 1;
+   z-index: 30;
+   position: relative;
 }
 
 .select-items div {
@@ -6572,9 +6583,11 @@ body.lock {
    margin-top: calc(20px + (44 - 20) * ((100vw - 375px) / (1920 - 375)));
    transition: background .2s ease;
 }
-.s-s18-card-button:hover{
+
+.s-s18-card-button:hover {
    background: #4d4444;
 }
+
 .s-s18-card-google {
    right: 0;
 }
@@ -6626,20 +6639,19 @@ body.lock {
 
 @media(max-width: 991px) {
    .s-s18-card {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       padding: 20px;
       display: flex;
       flex-direction: column;
       background: #393333;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       opacity: 0.9;
       border-radius: 10px;
       max-width: 400px;
       padding-bottom: 85px;
       max-height: 100%;
-      min-height: 335px;
+      max-height: 335px;
       display: none;
    }
 
@@ -6663,8 +6675,10 @@ body.lock {
 
 @media(max-width: 600px) {
    .s-s18-card {
-      max-width: 100%;
       width: 100%;
+      right: 0;
+      top: 33%;
+      max-height: 277px;
    }
 }
 
@@ -7694,7 +7708,7 @@ body.lock {
    grid-template-columns: 1fr 1fr;
    gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
    margin-bottom: 50px;
-   
+
 }
 
 .s-s22-card {
