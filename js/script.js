@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    const swiperfferf = new Swiper('.swiper-container-review', {
+      // Optional parameters
+      allowTouchMove: false,
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next-review',
+         prevEl: '.swiper-button-prev-review',
+      },
+      pagination: {
+         el: ".swiper-pagination-review",
+         type: "fraction",
+      },
+   });
+
    $(".container-radio").on('click', function () {
          $(".container-radio").removeClass("active");
          $(this).toggleClass("active");
@@ -470,20 +484,7 @@ $(document).ready(function () {
       autoHeight: true,
       spaceBetween: 40
    });
-   const swiperfferf = new Swiper('.swiper-container-review', {
-      // Optional parameters
-      allowTouchMove: false,
-      // Navigation arrows
-      navigation: {
-         nextEl: '.swiper-button-next-review',
-         prevEl: '.swiper-button-prev-review',
-      },
-      pagination: {
-         el: ".swiper-pagination-review",
-         type: "fraction",
-      },
-   });
-
+  
 
 
    var win = $(window).height() - 80;

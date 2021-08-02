@@ -6800,10 +6800,6 @@ body.lock {
    margin-right: 20px;
 }
 
-.s-section19 {
-   padding-bottom: 104px;
-}
-
 .swiper-button-prev-review {
    position: absolute;
    top: 50%;
@@ -7553,6 +7549,7 @@ body.lock {
 
 .s-s21-button {
    display: flex;
+   align-items: center;
    background: #FF0000;
    padding: 14px 30px;
    font-family: Century Gothic;
@@ -7566,6 +7563,7 @@ body.lock {
 .s-s21-button>img {
    margin-right: 20px;
    max-width: 16px;
+   max-height: 19px;
 }
 
 .s-s21-right {
@@ -7786,6 +7784,11 @@ body.lock {
    .s-s21-button {
       margin-right: auto;
       margin-left: auto;
+      max-height: 48px;
+      height: 100%;
+      max-width: 218px;
+      width: 100%;
+
    }
 }
 
@@ -8020,7 +8023,9 @@ body.lock {
    margin-top: 10px;
    color: #393333;
 }
-
+.s-s24-text>b{
+   font-weight: 900;
+}
 .s-s24-present {}
 
 .s-s24-present-text {
