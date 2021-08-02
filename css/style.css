@@ -754,6 +754,7 @@ h6 {
    justify-content: flex-end;
    margin-top: 100px;
    margin-left: 100px;
+   text-transform: uppercase;
 }
 
 .tabs {
@@ -3485,7 +3486,7 @@ body.lock {
 }
 
 .footer__title {
-   font-family: TTFirs-ExtraBold;
+   font-family: TTFirs-Bold;
    font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1920 - 375)));
    line-height: 28px;
    letter-spacing: 0.03em;
@@ -7507,7 +7508,7 @@ body.lock {
 }
 
 .s-s21-title {
-   max-width: 442px;
+   max-width: 625px;
 }
 
 .s-s21-text {
@@ -7679,11 +7680,14 @@ body.lock {
    grid-template-columns: 1fr 1fr;
    gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
    margin-bottom: 50px;
+   
 }
 
 .s-s22-card {
    display: flex;
    align-items: flex-start;
+   max-width: 580px;
+   margin: 0 auto;
 }
 
 .s-s22-card-info {
