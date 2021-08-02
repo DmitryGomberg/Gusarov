@@ -1212,7 +1212,7 @@ body.lock {
 }
 
 .header__right-number-mob>img {
-   max-width: 25px;
+   max-width: 40px;
    margin-right: 10px;
 }
 
@@ -1242,10 +1242,10 @@ body.lock {
    .serv .header__left-decor {
       display: block;
    }
-
+/* 
    .header-services .header__right-lang {
       display: none;
-   }
+   } */
 
 
    .head__menu-item:last-child {
@@ -1272,7 +1272,7 @@ body.lock {
    }
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1390px) {
    .head__menu-item {
       margin-right: 20px;
    }
