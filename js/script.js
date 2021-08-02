@@ -1,4 +1,8 @@
 $(document).ready(function () {
+   $(".container-radio").on('click', function () {
+         $(".container-radio").removeClass("active");
+         $(this).toggleClass("active");
+   });
    if ($(window).innerHeight() < '800') {
       if ($(document).width() < '991') {
          $('.links-mobile').click(function (event) {
@@ -105,6 +109,7 @@ $(document).ready(function () {
          type: "fraction",
       },
    });
+   
    if ($(document).width() < '991') {
 
       $('.s-s11-but').text('Хочу консультацию!');

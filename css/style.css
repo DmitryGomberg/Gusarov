@@ -1242,7 +1242,8 @@ body.lock {
    .serv .header__left-decor {
       display: block;
    }
-/* 
+
+   /* 
    .header-services .header__right-lang {
       display: none;
    } */
@@ -4246,8 +4247,13 @@ body.lock {
 .s-s3-stat {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 20px;
    margin-top: 50px;
+}
+
+@media(max-width: 991px) {
+   .s-s3-stat {
+      gap: 20px;
+   }
 }
 
 .s-s3-info {
@@ -4303,6 +4309,7 @@ body.lock {
    line-height: 100%;
    color: #FFC24B;
    margin-right: calc(10px + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   padding-bottom: 13px;
 }
 
 .s-s3-info-text {
@@ -5550,7 +5557,9 @@ body.lock {
    -ms-user-select: none;
    user-select: none;
 }
-
+.container-radio.active{
+   font-weight: 900;
+}
 .container-radio>input {
    position: absolute;
    opacity: 0;
@@ -6157,6 +6166,26 @@ body.lock {
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
+   flex: 0 1 42%;
+}
+
+@media(max-width: 1300px) {
+   .s-s15-card {
+      margin: 0px;
+      flex: 0 1 48%;
+   }
+
+   .tab6_item {
+      justify-content: space-between;
+   }
+
+}
+
+@media(max-width: 991px) {
+   .s-s15-card {
+      flex: 0 1 100%;
+      margin: 10px auto !important;
+   }
 }
 
 .s-s15-card-top {
@@ -6526,8 +6555,11 @@ body.lock {
    color: #FFFFFF;
    text-align: center;
    margin-top: calc(20px + (44 - 20) * ((100vw - 375px) / (1920 - 375)));
+   transition: background .2s ease;
 }
-
+.s-s18-card-button:hover{
+   background: #4d4444;
+}
 .s-s18-card-google {
    right: 0;
 }
@@ -7463,7 +7495,7 @@ body.lock {
 .s-s21-container {
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-end;
 }
 
 .s-s21-left {
@@ -8170,9 +8202,9 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: calc(12px  + (16 - 12) * ((100vw - 375px) / (1920 - 375)));
-   line-height: calc(15px  + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
-   margin-top: calc(10px  + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
+   font-size: calc(12px + (16 - 12) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(15px + (20 - 15) * ((100vw - 375px) / (1920 - 375)));
+   margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1920 - 375)));
    color: #393333;
    opacity: 0.8;
 }
