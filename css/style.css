@@ -351,6 +351,16 @@ h6 {
 }
 
 @font-face {
+   font-family: 'Century Gothic';
+   src: url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
+      url('../fonts/CenturyGothic-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+@font-face {
    font-family: 'RadiateSans';
    src: url('../fonts/RadiateSans-Bold.woff2') format('woff2'),
       url('../fonts/RadiateSans-Bold.woff') format('woff');
@@ -5160,7 +5170,23 @@ body.lock {
    font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #393333;
-   padding-right: 50px;
+   padding-right: calc(0px + (50 - 0) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@media(max-width: 991px) {
+   .s-s10-text>p {
+      margin-bottom: 5px;
+   }
+}
+
+.panel-heading-spec>a {
+   font-family: Century Gothic;
+   font-style: normal;
+   font-weight: bold;
+   font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+   line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
+   display: flex;
+   align-items: center;
 }
 
 .s-s10-button {
@@ -6105,6 +6131,13 @@ body.lock {
    line-height: 22px;
    text-align: center;
    color: #FFFFFF;
+   transition: background .2s ease;
+}
+
+@media(min-width: 991px) {
+   .s-s16-button:hover {
+      background: #4b4343;
+   }
 }
 
 @media(max-width: 991px) {
