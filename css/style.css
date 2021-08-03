@@ -2210,7 +2210,7 @@ body.lock {
    position: absolute;
    right: 35px;
    top: 30px;
-   max-height: 42px;
+   max-height: calc(30px  + (42 - 30) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .s6__card-img>img {
@@ -2230,10 +2230,11 @@ body.lock {
    font-family: Century Gothic;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
+   font-size: calc(14px  + (20 -14 ) * ((100vw - 375px) / (1920 - 375)));
    line-height: 140%;
    color: #FFFFFF;
    margin-bottom: 5px;
+   margin-top: 5px;
 }
 
 
