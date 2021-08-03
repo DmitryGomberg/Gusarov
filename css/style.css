@@ -4328,6 +4328,12 @@ body.lock {
    padding-bottom: 13px;
 }
 
+@media(max-width: 991px) {
+   .s-s3-info-num {
+      padding-bottom: 0px;
+   }
+}
+
 .s-s3-info-text {
    font-family: Century Gothic;
    font-style: normal;
@@ -7012,9 +7018,11 @@ body.lock {
    margin-right: 70px;
    margin-left: 70px;
 }
-.tab7_item-sp{
+
+.tab7_item-sp {
    margin-bottom: 50px;
 }
+
 .swiper-slide-clients-button-gramota {
    display: none;
 }
@@ -8026,9 +8034,11 @@ body.lock {
    margin-top: 10px;
    color: #393333;
 }
-.s-s24-text>b{
+
+.s-s24-text>b {
    font-weight: 900;
 }
+
 .s-s24-present {}
 
 .s-s24-present-text {
