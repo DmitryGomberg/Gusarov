@@ -1887,6 +1887,7 @@ body.lock {
    text-align: left;
    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
    padding-bottom: calc(122px + (100 - 122) * ((100vw - 375px) / (1920 - 375)));
+   overflow: hidden;
 }
 
 .s4__container {
@@ -2160,6 +2161,7 @@ body.lock {
    background-repeat: no-repeat;
    background-position: center;
    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+   overflow: hidden;
 }
 
 .s-section6-new {
@@ -2386,14 +2388,18 @@ body.lock {
    text-align: center;
    margin-bottom: 30px;
 }
-
+.s8__container{
+   overflow: hidden;
+}
 .section8 {
    background: #393333;
    padding-top: 50px;
    padding-bottom: calc(80px + (100 - 80) * ((100vw - 375px) / (1920 - 375)));
    position: relative;
 }
-
+.swiper-container-cou{
+   overflow: hidden;
+}
 .swiper-pagination-bullet {
    margin: 0 calc(7px + (25 - 7) * ((100vw - 375px) / (1920 - 375)));
    background: #EEEEEE;
@@ -2409,8 +2415,8 @@ body.lock {
 
 .swiper-pagination {
    position: absolute;
-   bottom: 45px;
-   left: 50%;
+   bottom: 45px!important;
+   left: 50%!important;
    transform: translateX(-50%);
 }
 
@@ -3148,9 +3154,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -75px;
+   bottom: -75px!important;
    transform: translateX(0);
-   left: -30px;
+   left: -30px!important;
 }
 
 .swiper-pagination-off {
@@ -3160,9 +3166,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -75px;
-   transform: translateX(0);
-   left: -30px;
+   bottom: -75px!important;
+   transform: translateX(0)!important;
+   left: -30px!important;
 }
 
 .swiper-pagination-work {
@@ -3172,9 +3178,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -75px;
+   bottom: -75px!important;
    transform: translateX(0);
-   left: -30px;
+   left: -30px!important;
    display: none;
 }
 
@@ -3185,9 +3191,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: 0px;
+   bottom: 0px!important;
    transform: translateX(0);
-   left: -30px;
+   left: -30px!importantж
 }
 
 .swiper-pagination-review {
@@ -3197,9 +3203,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -37px;
+   bottom: -37px!important;
    transform: translateX(0);
-   left: -30px;
+   left: -30px!important;
 }
 
 .swiper-pagination-clients {
@@ -3209,9 +3215,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   transform: translateX(0);
-   left: -30px;
-   margin-top: 30px;
+   transform: translateX(0)!important;
+   left: -30px!important;
+   margin-top: 30px!important;
 }
 
 .swiper-pagination-audio {
@@ -3221,9 +3227,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   transform: translateX(0);
-   left: -30px;
-   margin-top: 30px;
+   transform: translateX(0)!important;
+   left: -30px!important;
+   margin-top: 30px!important;
 }
 
 .swiper-pagination-cd {
@@ -3233,9 +3239,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -75px;
-   transform: translateX(0);
-   left: -30px;
+   bottom: -75px!important;
+   transform: translateX(0)!important;
+   left: -30px!important;
 
 }
 
@@ -7339,9 +7345,9 @@ body.lock {
    font-size: 24px;
    line-height: 140%;
    color: #cccccc;
-   bottom: -75px;
-   transform: translateX(0);
-   left: -30px;
+   bottom: -75px!important;
+   transform: translateX(0)!important;
+   left: -30px!important;
    display: none;
 }
 
