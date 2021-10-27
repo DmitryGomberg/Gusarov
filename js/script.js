@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+   $('.swiper-container').addClass('swiper');
+
     const swiperfferf = new Swiper('.swiper-container-review', {
       // Optional parameters
       allowTouchMove: false,
